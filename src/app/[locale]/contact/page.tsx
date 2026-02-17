@@ -3,8 +3,6 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import HeroSection from "@/components/sections/HeroSection";
 import WhatsAppForm from "@/components/forms/WhatsAppForm";
-
-export const runtime = "edge";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import { PHONE_NUMBER, ADDRESS, WHATSAPP_NUMBER } from "@/lib/constants";
 

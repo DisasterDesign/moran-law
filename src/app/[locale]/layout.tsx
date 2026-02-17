@@ -9,14 +9,16 @@ import Footer from "@/components/layout/Footer";
 import WhatsAppFAB from "@/components/layout/WhatsAppFAB";
 import { getLegalServiceSchema } from "@/lib/metadata";
 
-export const runtime = "edge";
-
 const heebo = Heebo({
   subsets: ["hebrew", "latin"],
   weight: ["300", "400", "700", "800", "900"],
   variable: "--font-heebo-var",
   display: "swap",
 });
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
 
 export async function generateMetadata({
   params,
