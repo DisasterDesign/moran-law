@@ -3,6 +3,8 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import HeroSection from "@/components/sections/HeroSection";
 import ContentSection from "@/components/sections/ContentSection";
 import BulletList from "@/components/sections/BulletList";
+
+export const runtime = "edge";
 import CTABanner from "@/components/sections/CTABanner";
 import WhatsAppForm from "@/components/forms/WhatsAppForm";
 import AnimatedSection from "@/components/ui/AnimatedSection";

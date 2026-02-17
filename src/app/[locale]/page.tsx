@@ -3,6 +3,8 @@ import HeroSection from "@/components/sections/HeroSection";
 import PracticeAreasGrid from "@/components/sections/PracticeAreasGrid";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import CTABanner from "@/components/sections/CTABanner";
+
+export const runtime = "edge";
 import WhatsAppForm from "@/components/forms/WhatsAppForm";
 
 export default async function HomePage({
