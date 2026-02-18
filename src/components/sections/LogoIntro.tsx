@@ -21,26 +21,23 @@ const LOGO_PATH =
 
 export default function LogoIntro({ onComplete }: LogoIntroProps) {
   const pathRef = useRef<SVGPathElement>(null);
+  const svgRef = useRef<SVGSVGElement>(null);
   const onCompleteRef = useRef(onComplete);
   onCompleteRef.current = onComplete;
 
   const [phase, setPhase] = useState<
     "draw" | "fill" | "shrink" | "fade" | "done"
   >("draw");
-  const [isRTL, setIsRTL] = useState(false);
 
   useEffect(() => {
-    setIsRTL(document.documentElement.dir === "rtl");
-
     const path = pathRef.current;
     if (!path) return;
 
-    /* Calculate the total path length for stroke-dash animation */
+    /* ── Phase 1: stroke draw ── */
     const len = path.getTotalLength();
     path.style.strokeDasharray = `${len}`;
     path.style.strokeDashoffset = `${len}`;
 
-    /* Force reflow so the browser registers the initial offset, then animate */
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
         if (!pathRef.current) return;
@@ -49,9 +46,45 @@ export default function LogoIntro({ onComplete }: LogoIntroProps) {
       });
     });
 
+    /* ── Phase 2: fill white ── */
     const t1 = setTimeout(() => setPhase("fill"), FILL_AT);
-    const t2 = setTimeout(() => setPhase("shrink"), SHRINK_AT);
+
+    /* ── Phase 3: shrink to header logo position ── */
+    const t2 = setTimeout(() => {
+      const svg = svgRef.current;
+      const target = document.querySelector("[data-logo-target]");
+
+      if (svg && target) {
+        const svgRect = svg.getBoundingClientRect();
+        const targetRect = target.getBoundingClientRect();
+
+        /* Scale so SVG height matches header logo text height */
+        const s = targetRect.height / svgRect.height;
+
+        /* Translate SVG center to target center */
+        const tx =
+          targetRect.left +
+          targetRect.width / 2 -
+          (svgRect.left + svgRect.width / 2);
+        const ty =
+          targetRect.top +
+          targetRect.height / 2 -
+          (svgRect.top + svgRect.height / 2);
+
+        /* Apply via DOM for reliable CSS transition */
+        svg.style.transition = `transform ${SHRINK_DURATION}ms cubic-bezier(0.4, 0, 0.2, 1)`;
+        /* Force reflow so transition property registers before transform changes */
+        svg.getBoundingClientRect();
+        svg.style.transform = `translate(${tx}px, ${ty}px) scale(${s})`;
+      }
+
+      setPhase("shrink");
+    }, SHRINK_AT);
+
+    /* ── Phase 4: fade overlay ── */
     const t3 = setTimeout(() => setPhase("fade"), FADE_AT);
+
+    /* ── Done: unmount & trigger hero ── */
     const t4 = setTimeout(() => {
       setPhase("done");
       onCompleteRef.current();
@@ -67,8 +100,6 @@ export default function LogoIntro({ onComplete }: LogoIntroProps) {
 
   if (phase === "done") return null;
 
-  const shrinkTx = isRTL ? "40vw" : "-40vw";
-  const isShrunk = phase === "shrink" || phase === "fade";
   const isFilled = phase !== "draw";
 
   return (
@@ -78,21 +109,15 @@ export default function LogoIntro({ onComplete }: LogoIntroProps) {
         background:
           "radial-gradient(ellipse at 30% 20%, #004466 0%, #003149 40%, #001e2d 100%)",
         opacity: phase === "fade" ? 0 : 1,
-        transition: phase === "fade" ? `opacity ${FADE_DURATION}ms ease` : "none",
+        transition:
+          phase === "fade" ? `opacity ${FADE_DURATION}ms ease` : "none",
         pointerEvents: "none",
       }}
     >
       <svg
+        ref={svgRef}
         viewBox="0 0 515 385"
         className="w-[60vw] max-w-[500px]"
-        style={{
-          transform: isShrunk
-            ? `scale(0.12) translate(${shrinkTx}, -350%)`
-            : "scale(1) translate(0, 0)",
-          transition: isShrunk
-            ? `transform ${SHRINK_DURATION}ms cubic-bezier(0.4, 0, 0.2, 1)`
-            : "none",
-        }}
       >
         <path
           ref={pathRef}
