@@ -44,7 +44,7 @@ export default function PracticeAreasGrid() {
               <AnimatedSection key={area.href} delay={index * 0.08}>
                 <Link
                   href={area.href}
-                  className="relative aspect-square p-6 md:p-8 flex flex-col justify-center items-center text-center group tile-hover-effect"
+                  className={`relative aspect-square p-6 md:p-8 flex flex-col justify-center items-center text-center group ${area.key === "laborEmployers" ? "tile-circle-default" : "tile-hover-effect"}`}
                   style={{ background: TILE_GRADIENT }}
                 >
                   <div className="absolute top-6 start-6 w-3 h-3 bg-[#003149]/20" />
@@ -88,7 +88,7 @@ export default function PracticeAreasGrid() {
             <AnimatedSection key={area.href} delay={0.24 + index * 0.08}>
               <Link
                 href={area.href}
-                className="relative aspect-[4/3] p-6 md:p-8 flex flex-col justify-center items-center text-center group tile-hover-effect"
+                className={`relative aspect-[4/3] p-6 md:p-8 flex flex-col justify-center items-center text-center group ${area.key === "mediation" ? "tile-circle-default" : "tile-hover-effect"}`}
                 style={{ background: TILE_GRADIENT }}
               >
                 <div className="absolute top-6 start-6 w-3 h-3 bg-[#003149]/20" />

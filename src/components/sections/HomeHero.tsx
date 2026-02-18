@@ -59,19 +59,21 @@ export default function HomeHero({ introDone = true }: { introDone?: boolean }) 
 
       {/* Text content */}
       <div className="relative z-10 text-center px-6">
-        <div className="overflow-hidden inline-block">
-          <h1 className="text-[clamp(45px,7.2vw,96px)] font-bold text-white leading-none mb-4 animate-slide-up">
-            {t("heroTitle")}
-          </h1>
-        </div>
-
+        {/* Line appears first */}
         <div
-          className="h-0.5 mx-auto mb-7 animate-line-grow"
+          className="h-0.5 mx-auto mb-4 animate-line-grow"
           style={{
             background:
               "linear-gradient(90deg, transparent, #FF7D00, transparent)",
           }}
         />
+
+        {/* Title rises up from the line */}
+        <div className="overflow-hidden inline-block">
+          <h1 className="text-[clamp(45px,7.2vw,96px)] font-bold text-white leading-none mb-7 animate-slide-up">
+            {t("heroTitle")}
+          </h1>
+        </div>
 
         <div className="flex justify-center gap-8 mb-8 flex-wrap">
           {practiceAreas.map((area: string, i: number) => (
