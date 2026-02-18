@@ -59,27 +59,28 @@ export default function HomeHero({ introDone = true }: { introDone?: boolean }) 
 
       {/* Text content */}
       <div className="relative z-10 text-center px-6">
-        {/* Line appears first */}
+        {/* Title rises UP from the line */}
+        <div className="overflow-hidden inline-block">
+          <h1 className="text-[clamp(45px,7.2vw,96px)] font-bold text-white leading-none animate-rise-up">
+            {t("heroTitle")}
+          </h1>
+        </div>
+
+        {/* Orange line — stretches from center */}
         <div
-          className="h-0.5 mx-auto mb-4 animate-line-grow"
+          className="h-0.5 w-20 mx-auto mt-4 mb-7 origin-center animate-line-stretch"
           style={{
             background:
               "linear-gradient(90deg, transparent, #FF7D00, transparent)",
           }}
         />
 
-        {/* Title rises up from the line */}
-        <div className="overflow-hidden inline-block">
-          <h1 className="text-[clamp(45px,7.2vw,96px)] font-bold text-white leading-none mb-7 animate-slide-up">
-            {t("heroTitle")}
-          </h1>
-        </div>
-
+        {/* Practice areas descend DOWN from the line */}
         <div className="flex justify-center gap-8 mb-8 flex-wrap">
           {practiceAreas.map((area: string, i: number) => (
             <span
               key={i}
-              className={`text-[clamp(13px,1.4vw,16px)] font-light text-white/50 tracking-wider opacity-0 animate-fade-up-${i + 1}${
+              className={`text-[clamp(13px,1.4vw,16px)] font-light text-white/50 tracking-wider animate-fade-down-${i + 1}${
                 i > 0
                   ? " relative before:content-[''] before:absolute before:-start-4 before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-1 before:rounded-full before:bg-[#FF7D00] before:opacity-60"
                   : ""
@@ -90,7 +91,7 @@ export default function HomeHero({ introDone = true }: { introDone?: boolean }) 
           ))}
         </div>
 
-        <p className="text-[clamp(17px,2vw,22px)] font-light text-white/70 leading-relaxed max-w-[580px] mx-auto opacity-0 animate-fade-up-tag">
+        <p className="text-[clamp(17px,2vw,22px)] font-light text-white/70 leading-relaxed max-w-[580px] mx-auto animate-fade-down-tag">
           {t("heroDescription")}
         </p>
       </div>
