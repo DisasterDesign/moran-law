@@ -131,7 +131,9 @@
     "description": "Moran Sudry Hen Law Office specializing in labor law, torts, national insurance, continuing power of attorney, and mediation.",
     "facebook": "Facebook",
     "instagram": "Instagram",
-    "linkedin": "LinkedIn"
+    "linkedin": "LinkedIn",
+    "tiktok": "TikTok",
+    "youtube": "YouTube"
   },
   "notFound": {
     "code": "404",
@@ -186,6 +188,7 @@
       "contactMethodsTitle": "Ways to Reach Us",
       "phone": "Phone",
       "whatsappDirect": "Send a direct message",
+      "email": "Email",
       "address": "Address",
       "formTitle": "Contact Form",
       "formDescription": "Fill in your details and we'll get back to you",

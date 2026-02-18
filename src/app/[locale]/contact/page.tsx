@@ -4,7 +4,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import HeroSection from "@/components/sections/HeroSection";
 import WhatsAppForm from "@/components/forms/WhatsAppForm";
 import AnimatedSection from "@/components/ui/AnimatedSection";
-import { PHONE_NUMBER, ADDRESS, WHATSAPP_NUMBER } from "@/lib/constants";
+import { PHONE_NUMBER, EMAIL, ADDRESS, WHATSAPP_NUMBER } from "@/lib/constants";
 
 export async function generateMetadata({
   params,
@@ -82,14 +82,18 @@ export default async function ContactPage({
             </a>
           </AnimatedSection>
 
-          {/* Location */}
+          {/* Email */}
           <AnimatedSection delay={0.2}>
-            <div className="p-8 bg-tile-neutral tile-hover-effect text-center flex flex-col items-center justify-center min-h-[140px]">
-              <h3 className="text-lg font-bold text-text mb-2">{t("address")}</h3>
-              <p className="text-text-secondary text-sm">
-                {ADDRESS || t("comingSoon")}
+            <a
+              href={EMAIL ? `mailto:${EMAIL}` : "#"}
+              className="block p-8 bg-tile-neutral group tile-hover-effect text-center flex flex-col items-center justify-center min-h-[140px]"
+              style={{ '--tile-color': '#003149' } as CSSProperties}
+            >
+              <h3 className="text-lg font-bold mb-2 group-hover:text-white">{t("email")}</h3>
+              <p className="text-text-secondary text-sm group-hover:text-white/70">
+                {EMAIL || t("comingSoon")}
               </p>
-            </div>
+            </a>
           </AnimatedSection>
 
           {/* Form scroll */}

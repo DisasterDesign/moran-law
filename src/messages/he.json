@@ -131,7 +131,9 @@
     "description": "משרד עורכי דין מורן סודרי חן, מתמחים בדיני עבודה, נזיקין, ביטוח לאומי, ייפוי כוח מתמשך וגישור.",
     "facebook": "פייסבוק",
     "instagram": "אינסטגרם",
-    "linkedin": "לינקדאין"
+    "linkedin": "לינקדאין",
+    "tiktok": "טיקטוק",
+    "youtube": "יוטיוב"
   },
   "notFound": {
     "code": "404",
@@ -186,6 +188,7 @@
       "contactMethodsTitle": "דרכי יצירת קשר",
       "phone": "טלפון",
       "whatsappDirect": "שלחו הודעה ישירה",
+      "email": "אימייל",
       "address": "כתובת",
       "formTitle": "טופס פנייה",
       "formDescription": "מלאו פרטים ונחזור אליכם",
