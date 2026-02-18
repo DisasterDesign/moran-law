@@ -110,7 +110,18 @@ export default function Footer() {
       <div className="border-t border-gray-200 py-6">
         <Container>
           <p className="text-center text-sm text-text-secondary/60">
-            &copy; {currentYear} {tc("siteName")}. {tc("allRightsReserved")}.
+            &copy; {currentYear} {tc("siteName")}. {tc("allRightsReserved")}
+          </p>
+          <p className="text-center text-xs text-text-secondary/40 mt-2">
+            Built by{" "}
+            <a
+              href="https://www.fuzionwebz.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-text-secondary/60 transition-colors underline"
+            >
+              Fuzion
+            </a>
           </p>
         </Container>
       </div>
