@@ -3,7 +3,7 @@
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import Container from "@/components/ui/Container";
-import { navRoutes } from "@/data/navigation";
+import { navRoutes as _navRoutes } from "@/data/navigation";
 import { SOCIAL_LINKS, PHONE_NUMBER, EMAIL, ADDRESS } from "@/lib/constants";
 
 export default function Footer() {
@@ -88,16 +88,26 @@ export default function Footer() {
           <div>
             <h3 className="text-sm font-bold mb-4 text-text uppercase tracking-wide">{tc("quickNav")}</h3>
             <ul className="space-y-2">
-              {navRoutes.map((route) => (
-                <li key={route.href}>
-                  <Link
-                    href={route.href}
-                    className="text-text-secondary hover:text-text transition-colors text-sm"
-                  >
-                    {tNav(route.key)}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link href="/" className="text-text-secondary hover:text-text transition-colors text-sm">
+                  {tNav("home")}
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className="text-text-secondary hover:text-text transition-colors text-sm">
+                  {tNav("about")}
+                </Link>
+              </li>
+              <li>
+                <Link href="/#practice-areas" className="text-text-secondary hover:text-text transition-colors text-sm">
+                  {tFooter("services")}
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="text-text-secondary hover:text-text transition-colors text-sm">
+                  {tNav("contact")}
+                </Link>
+              </li>
             </ul>
           </div>
 

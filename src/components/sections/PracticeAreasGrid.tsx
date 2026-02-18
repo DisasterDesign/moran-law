@@ -27,7 +27,7 @@ export default function PracticeAreasGrid() {
   const t = useTranslations("practiceAreas");
 
   return (
-    <section className="bg-white">
+    <section id="practice-areas" className="bg-white">
       {/* Section heading */}
       <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12 pt-16 md:pt-20 lg:pt-24 pb-8">
         <AnimatedSection>
