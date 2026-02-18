@@ -1,5 +1,5 @@
 export const WHATSAPP_NUMBER =
-  process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "972XXXXXXXXX";
+  process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "972506984909";
 export const PHONE_NUMBER = ""; // placeholder
 export const EMAIL = ""; // placeholder
 export const ADDRESS = ""; // placeholder

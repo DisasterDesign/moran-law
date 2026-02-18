@@ -60,7 +60,7 @@ export default function HomeHero() {
       {/* Text content */}
       <div className="relative z-10 text-center px-6">
         <div className="overflow-hidden inline-block">
-          <h1 className="text-[clamp(56px,9vw,120px)] font-bold text-white leading-none mb-4 animate-slide-up">
+          <h1 className="text-[clamp(45px,7.2vw,96px)] font-bold text-white leading-none mb-4 animate-slide-up">
             {t("heroTitle")}
           </h1>
         </div>
