@@ -47,17 +47,17 @@ export default function PracticeAreasGrid() {
                   className="relative aspect-square p-6 md:p-8 flex flex-col justify-center items-center text-center group tile-hover-effect"
                   style={{ background: TILE_GRADIENT }}
                 >
-                  <div className="absolute top-6 start-6 w-3 h-3 bg-white/20" />
+                  <div className="absolute top-6 start-6 w-3 h-3 bg-[#003149]/20" />
                   <div className="relative z-10">
-                    <h3 className="text-xl md:text-2xl font-bold text-white mb-2 leading-tight">
+                    <h3 className="text-2xl md:text-3xl font-bold text-[#003149] mb-2 leading-tight">
                       {t(`${area.key}.title`)}
                     </h3>
-                    <p className="text-white/70 text-sm leading-relaxed">
+                    <p className="text-[#003149]/60 text-base leading-relaxed">
                       {t(`${area.key}.description`)}
                     </p>
                   </div>
                   <div className="absolute bottom-6 start-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <svg className="w-5 h-5 text-white/70 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+                    <svg className="w-5 h-5 text-[#003149]/60 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                     </svg>
                   </div>
@@ -73,9 +73,9 @@ export default function PracticeAreasGrid() {
               className="relative h-full min-h-[200px] flex items-center justify-center group tile-hover-effect"
               style={{ background: TILE_GRADIENT }}
             >
-              <div className="absolute w-[40%] aspect-square rounded-full border-2 border-white/20 group-hover:border-white/30 transition-colors duration-300" />
-              <span className="relative text-lg font-bold text-white/80 group-hover:text-white transition-colors duration-300 flex items-center gap-2">
-                <span className="inline-block w-2 h-2 bg-white/40" />
+              <div className="absolute w-[40%] aspect-square rounded-full border-2 border-[#003149]/20 group-hover:border-[#003149]/30 transition-colors duration-300" />
+              <span className="relative text-xl font-bold text-[#003149]/80 group-hover:text-[#003149] transition-colors duration-300 flex items-center gap-2">
+                <span className="inline-block w-2 h-2 bg-[#003149]/40" />
                 {t("allAreas")}
               </span>
             </Link>
@@ -91,17 +91,17 @@ export default function PracticeAreasGrid() {
                 className="relative aspect-[4/3] p-6 md:p-8 flex flex-col justify-center items-center text-center group tile-hover-effect"
                 style={{ background: TILE_GRADIENT }}
               >
-                <div className="absolute top-6 start-6 w-3 h-3 bg-white/20" />
+                <div className="absolute top-6 start-6 w-3 h-3 bg-[#003149]/20" />
                 <div className="relative z-10">
-                  <h3 className="text-xl md:text-2xl font-bold text-white mb-2 leading-tight">
+                  <h3 className="text-2xl md:text-3xl font-bold text-[#003149] mb-2 leading-tight">
                     {t(`${area.key}.title`)}
                   </h3>
-                  <p className="text-white/70 text-sm leading-relaxed">
+                  <p className="text-[#003149]/60 text-base leading-relaxed">
                     {t(`${area.key}.description`)}
                   </p>
                 </div>
                 <div className="absolute bottom-6 start-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <svg className="w-5 h-5 text-white/70 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+                  <svg className="w-5 h-5 text-[#003149]/60 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                   </svg>
                 </div>
