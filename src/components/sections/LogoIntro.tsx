@@ -87,6 +87,7 @@ export default function LogoIntro({ onComplete }: LogoIntroProps) {
     /* ── Done: unmount & trigger hero ── */
     const t4 = setTimeout(() => {
       setPhase("done");
+      window.dispatchEvent(new Event("logo-intro-done"));
       onCompleteRef.current();
     }, DONE_AT);
 

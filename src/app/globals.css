@@ -79,6 +79,25 @@
   66% { opacity: 0.7; transform: scale(0.95) translate(-15px, 15px); }
 }
 
+/* Logo Y-axis flip */
+@keyframes flip-y {
+  0% { transform: perspective(800px) rotateY(0deg); }
+  100% { transform: perspective(800px) rotateY(360deg); }
+}
+
+.logo-flip {
+  animation: flip-y 0.8s ease-in-out;
+}
+
+.logo-hover-flip {
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease-in-out;
+}
+.logo-hover-flip:hover {
+  transform: perspective(800px) rotateY(360deg);
+}
+
+
 /* Pause all hero animations until intro completes */
 .hero-paused,
 .hero-paused * {
