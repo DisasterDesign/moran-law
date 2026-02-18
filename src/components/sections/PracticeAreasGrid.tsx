@@ -4,20 +4,23 @@ import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 
+const TILE_GRADIENT = "linear-gradient(135deg, #FEFFAA 0%, #F6AD35 100%)";
+
 /* Labor law tiles (side by side) */
 const laborTiles = [
-  { key: "laborEmployees", href: "/labor-law-employees", color: "#FF7D00" },
-  { key: "laborEmployers", href: "/labor-law-employers", color: "#FF7D00" },
+  { key: "laborEmployees", href: "/labor-law-employees" },
+  { key: "laborEmployers", href: "/labor-law-employers" },
 ];
 
 /* Featured rectangle tile (completes the row) */
-const featuredTile = { key: "allAreas", href: "/about", color: "#FF7D00" };
+const featuredTile = { key: "allAreas", href: "/about" };
 
 /* Remaining practice area tiles */
 const otherTiles = [
-  { key: "torts", href: "/torts", color: "#FF7D00" },
-  { key: "nationalInsurance", href: "/national-insurance", color: "#FF7D00" },
-  { key: "powerOfAttorney", href: "/power-of-attorney", color: "#FF7D00" },
+  { key: "torts", href: "/torts" },
+  { key: "nationalInsurance", href: "/national-insurance" },
+  { key: "powerOfAttorney", href: "/power-of-attorney" },
+  { key: "mediation", href: "/mediation" },
 ];
 
 export default function PracticeAreasGrid() {
@@ -42,7 +45,7 @@ export default function PracticeAreasGrid() {
                 <Link
                   href={area.href}
                   className="relative aspect-square p-6 md:p-8 flex flex-col justify-center items-center text-center group tile-hover-effect"
-                  style={{ backgroundColor: area.color }}
+                  style={{ background: TILE_GRADIENT }}
                 >
                   <div className="absolute top-6 start-6 w-3 h-3 bg-white/20" />
                   <div className="relative z-10">
@@ -68,7 +71,7 @@ export default function PracticeAreasGrid() {
             <Link
               href={featuredTile.href}
               className="relative h-full min-h-[200px] flex items-center justify-center group tile-hover-effect"
-              style={{ backgroundColor: featuredTile.color }}
+              style={{ background: TILE_GRADIENT }}
             >
               <div className="absolute w-[40%] aspect-square rounded-full border-2 border-white/20 group-hover:border-white/30 transition-colors duration-300" />
               <span className="relative text-lg font-bold text-white/80 group-hover:text-white transition-colors duration-300 flex items-center gap-2">
@@ -79,14 +82,14 @@ export default function PracticeAreasGrid() {
           </AnimatedSection>
         </div>
 
-        {/* Remaining tiles — 3-column grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-[1px] mt-[1px]">
+        {/* Remaining tiles — 4-column grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-[1px] mt-[1px]">
           {otherTiles.map((area, index) => (
             <AnimatedSection key={area.href} delay={0.24 + index * 0.08}>
               <Link
                 href={area.href}
                 className="relative aspect-[4/3] p-6 md:p-8 flex flex-col justify-center items-center text-center group tile-hover-effect"
-                style={{ backgroundColor: area.color }}
+                style={{ background: TILE_GRADIENT }}
               >
                 <div className="absolute top-6 start-6 w-3 h-3 bg-white/20" />
                 <div className="relative z-10">

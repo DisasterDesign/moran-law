@@ -38,9 +38,10 @@
   --animate-fade-up-2: fade-up 0.8s ease 1.95s forwards;
   --animate-fade-up-3: fade-up 0.8s ease 2.1s forwards;
   --animate-fade-up-4: fade-up 0.8s ease 2.25s forwards;
-  --animate-fade-up-tag: fade-up 1s ease 2.4s forwards;
-  --animate-fade-in-scroll: fade-in 1s ease 3s forwards;
-  --animate-fade-in-late: fade-in 1.5s ease 2.8s forwards;
+  --animate-fade-up-5: fade-up 0.8s ease 2.4s forwards;
+  --animate-fade-up-tag: fade-up 1s ease 2.55s forwards;
+  --animate-fade-in-scroll: fade-in 1s ease 3.15s forwards;
+  --animate-fade-in-late: fade-in 1.5s ease 2.95s forwards;
   --animate-glow-drift: glow-drift 12s ease-in-out infinite;
   --animate-scroll-pulse: scroll-pulse 2s ease-in-out infinite;
 }

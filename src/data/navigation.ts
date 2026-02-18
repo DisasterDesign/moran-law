@@ -6,6 +6,7 @@ export const navRoutes = [
   { key: "torts", href: "/torts" },
   { key: "nationalInsurance", href: "/national-insurance" },
   { key: "powerOfAttorney", href: "/power-of-attorney" },
+  { key: "mediation", href: "/mediation" },
   { key: "contact", href: "/contact" },
 ] as const;
 
@@ -15,6 +16,7 @@ export const practiceAreaRoutes = [
   { key: "torts", href: "/torts" },
   { key: "nationalInsurance", href: "/national-insurance" },
   { key: "powerOfAttorney", href: "/power-of-attorney" },
+  { key: "mediation", href: "/mediation" },
 ] as const;
 
 export type MenuTab = "practices" | "about" | "contact";

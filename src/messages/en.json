@@ -1,6 +1,6 @@
 {
   "common": {
-    "siteName": "Moran Sudry Chen — Law Office",
+    "siteName": "Moran Sudry Hen Law Office",
     "logoText": "M.S.C",
     "menuOpen": "Menu",
     "menuClose": "Close",
@@ -18,11 +18,12 @@
   "nav": {
     "home": "Home",
     "about": "About",
-    "laborEmployees": "Labor Law — Employees",
-    "laborEmployers": "Labor Law — Employers",
+    "laborEmployees": "Labor Law Employees",
+    "laborEmployers": "Labor Law Employers",
     "torts": "Torts & Personal Injury",
     "nationalInsurance": "National Insurance",
     "powerOfAttorney": "Continuing Power of Attorney",
+    "mediation": "Mediation",
     "contact": "Contact"
   },
   "menuTabs": {
@@ -34,25 +35,25 @@
     },
     "about": {
       "label": "About",
-      "title": "Moran Sudry Chen — Attorney",
+      "title": "Moran Sudry Hen Attorney",
       "description": "Over 15 years of experience in labor law, torts, and national insurance.",
       "ctaLabel": "Read More"
     },
     "contact": {
       "label": "Contact",
       "title": "Let's Talk",
-      "description": "We're here for you — by phone, WhatsApp, or in person.",
+      "description": "We're here for you by phone, WhatsApp, or in person.",
       "ctaLabel": "Contact Page"
     }
   },
   "practiceAreas": {
     "sectionTitle": "Practice Areas",
     "laborEmployees": {
-      "title": "Labor Law — Employees",
+      "title": "Labor Law Employees",
       "description": "Termination, hearings, deterioration of conditions, rights & personal guidance"
     },
     "laborEmployers": {
-      "title": "Labor Law — Employers",
+      "title": "Labor Law Employers",
       "description": "Ongoing counsel, contracts, hearings & defense in claims"
     },
     "torts": {
@@ -65,28 +66,33 @@
     },
     "powerOfAttorney": {
       "title": "Continuing Power of Attorney",
-      "description": "Legal planning for the future — with peace and control"
+      "description": "Legal planning for the future with peace and control"
+    },
+    "mediation": {
+      "title": "Mediation",
+      "description": "Business, family, and employer-employee mediation"
     },
     "allAreas": "All Areas"
   },
   "practiceAreaLinks": {
-    "laborEmployees": "Labor Law — Employees",
-    "laborEmployers": "Labor Law — Employers",
+    "laborEmployees": "Labor Law Employees",
+    "laborEmployers": "Labor Law Employers",
     "torts": "Torts & Personal Injury",
     "nationalInsurance": "National Insurance",
-    "powerOfAttorney": "Continuing Power of Attorney"
+    "powerOfAttorney": "Continuing Power of Attorney",
+    "mediation": "Mediation"
   },
   "whyChooseUs": {
-    "title": "Why Choose Moran Sudry Chen",
+    "title": "Why Choose Moran Sudry Hen",
     "stats": {
       "years": { "suffix": "+", "label": "Years of Experience" },
       "cases": { "suffix": "+", "label": "Cases" },
-      "sides": { "suffix": "", "label": "Sides — Employees & Employers" }
+      "sides": { "suffix": "", "label": "Sides Employees & Employers" }
     },
     "circleTile": "Experience That\nMakes the Difference",
     "reasons": {
       "0": "Over 15 years of experience",
-      "1": "Representing both employees & employers — understands both sides",
+      "1": "Representing both employees & employers, understands both sides",
       "2": "Litigation experience and management of complex claims",
       "3": "Personal and sensitive guidance in difficult life situations",
       "4": "Working with companies, institutions, and national insurance"
@@ -105,11 +111,12 @@
     "descriptionPlaceholder": "Tell us briefly about your case (optional)",
     "submit": "Send WhatsApp Message",
     "subjects": {
-      "labor-employees": "Labor Law — Employees",
-      "labor-employers": "Labor Law — Employers",
+      "labor-employees": "Labor Law Employees",
+      "labor-employers": "Labor Law Employers",
       "torts": "Torts & Personal Injury",
       "national-insurance": "National Insurance",
       "power-of-attorney": "Continuing Power of Attorney",
+      "mediation": "Mediation",
       "other": "Other"
     }
   },
@@ -121,7 +128,7 @@
     "details": "Details"
   },
   "footer": {
-    "description": "Moran Sudry Chen Law Office — specializing in labor law, torts, national insurance, and continuing power of attorney.",
+    "description": "Moran Sudry Hen Law Office specializing in labor law, torts, national insurance, continuing power of attorney, and mediation.",
     "facebook": "Facebook",
     "instagram": "Instagram",
     "linkedin": "LinkedIn"
@@ -139,41 +146,41 @@
   },
   "pages": {
     "home": {
-      "metaTitle": "Moran Sudry Chen — Attorney | Labor Law, Torts, National Insurance",
-      "metaTitleTemplate": "%s | Moran Sudry Chen — Attorney",
-      "metaDescription": "Moran Sudry Chen Law Office — specializing in labor law, torts, and national insurance with over 15 years of experience. Personal and professional guidance.",
-      "heroTitle": "Moran Sudry Chen",
-      "heroSubtitle": "Labor Law | Torts | National Insurance | Power of Attorney",
-      "heroDescription": "When a legal crisis meets real life — you need an attorney who understands both the law and the person behind it.",
+      "metaTitle": "Sudry Hen Law & Mediation | Labor Law, Torts, National Insurance",
+      "metaTitleTemplate": "%s | Sudry Hen Law & Mediation",
+      "metaDescription": "Moran Sudry Hen Law Office specializing in labor law, torts, and national insurance with over 15 years of experience. Personal and professional guidance.",
+      "heroTitle": "Sudry Hen Law & Mediation",
+      "heroSubtitle": "Labor Law | Torts | National Insurance | Power of Attorney | Mediation",
+      "heroDescription": "When a legal crisis meets real life, you need an attorney who understands both the law and the person behind it.",
       "heroCta": "Free Consultation",
       "heroWhatsApp": "WhatsApp",
-      "ctaTitle": "When it comes to your rights — don't stand alone.",
+      "ctaTitle": "When it comes to your rights, don't stand alone.",
       "ctaCta": "Free Consultation"
     },
     "about": {
-      "metaTitle": "About Moran Sudry Chen",
-      "metaDescription": "Attorney Moran Sudry Chen — over 15 years of experience in labor law, torts, and national insurance. Personal and professional guidance at the most meaningful moments.",
-      "ogTitle": "About Moran Sudry Chen | Attorney",
+      "metaTitle": "About Moran Sudry Hen",
+      "metaDescription": "Attorney Moran Sudry Hen over 15 years of experience in labor law, torts, and national insurance. Personal and professional guidance at the most meaningful moments.",
+      "ogTitle": "About Moran Sudry Hen | Attorney",
       "ogDescription": "Over 15 years of experience in labor law, torts, and national insurance.",
-      "heroTitle": "Moran Sudry Chen — Attorney",
+      "heroTitle": "Moran Sudry Hen Attorney",
       "heroSubtitle": "Experience, professionalism, and human sensitivity",
       "heroDescription": "With over 15 years of experience, guiding clients through the most significant legal and personal moments of their lives.",
       "heroCta": "Contact Us",
       "pageLabel": "About",
-      "imageAlt": "Attorney Moran Sudry Chen",
-      "bio1": "With over 15 years of experience, Moran Sudry Chen specializes in labor law, torts, and national insurance — guiding clients through the most significant legal and personal moments of their lives.",
-      "bio2": "She began her career as an associate at a large firm in Jerusalem, working across various legal fields. She later specialized in torts, and after moving to Tel Aviv, also practiced immigration law — where she established a torts department, became a partner, and opened a labor law department.",
-      "bio3": "For the past 10 years, she has been running her own private practice, representing clients in complex tort cases, national insurance claims, and labor law — for both employees and employers.",
+      "imageAlt": "Attorney Moran Sudry Hen",
+      "bio1": "With over 15 years of experience, Moran Sudry Hen specializes in labor law, torts, and national insurance, guiding clients through the most significant legal and personal moments of their lives.",
+      "bio2": "She began her career as an associate at a large firm in Jerusalem, working across various legal fields. She later specialized in torts, and after moving to Tel Aviv, also practiced immigration law where she established a torts department, became a partner, and opened a labor law department.",
+      "bio3": "For the past 10 years, she has been running her own private practice, representing clients in complex tort cases, national insurance claims, and labor law for both employees and employers.",
       "bio4": "Over the years, Moran has served diverse populations, including the ultra-Orthodox community in national insurance and tort claims, employees and employers, accident victims, and individuals dealing with complex medical conditions.",
-      "bio5": "Her broad experience, combined with deep human understanding, allows her to lead cases with sensitivity — yet with uncompromising legal determination."
+      "bio5": "Her broad experience, combined with deep human understanding, allows her to lead cases with sensitivity yet with uncompromising legal determination."
     },
     "contact": {
       "metaTitle": "Contact Us",
-      "metaDescription": "Contact Moran Sudry Chen Law Office — phone, WhatsApp, or contact form. We'll get back to you promptly.",
-      "ogTitle": "Contact | Moran Sudry Chen — Attorney",
-      "ogDescription": "Talk to us — we're here for you.",
+      "metaDescription": "Contact Moran Sudry Hen Law Office by phone, WhatsApp, or contact form. We'll get back to you promptly.",
+      "ogTitle": "Contact | Moran Sudry Hen Attorney",
+      "ogDescription": "Talk to us, we're here for you.",
       "heroTitle": "Let's Talk",
-      "heroSubtitle": "There are moments when you need to stop — and understand what your rights really are.",
+      "heroSubtitle": "There are moments when you need to stop and understand what your rights really are.",
       "heroCta": "Send a WhatsApp Message",
       "pageLabel": "Contact",
       "contactMethodsTitle": "Ways to Reach Us",
@@ -189,19 +196,19 @@
       "whatsapp": "WhatsApp"
     },
     "laborEmployees": {
-      "metaTitle": "Labor Law for Employees — Termination, Hearings, Rights",
-      "metaDescription": "Were you fired? Called to a hearing? Attorney Moran Sudry Chen specializes in employee rights with 15+ years of experience. Personal and professional guidance.",
-      "ogTitle": "Labor Law for Employees | Moran Sudry Chen — Attorney",
+      "metaTitle": "Labor Law for Employees Termination, Hearings, Rights",
+      "metaDescription": "Were you fired? Called to a hearing? Attorney Moran Sudry Hen specializes in employee rights with 15+ years of experience. Personal and professional guidance.",
+      "ogTitle": "Labor Law for Employees | Moran Sudry Hen Attorney",
       "ogDescription": "Representing employees in termination, hearings, deterioration of conditions, and full rights realization.",
       "heroTitle": "Fired? Called to a hearing?",
-      "heroSubtitle": "Feel like your rights are being trampled — and you don't know where to start?",
-      "heroDescription": "Your rights aren't given — they're granted to you by law.",
+      "heroSubtitle": "Feel like your rights are being trampled and you don't know where to start?",
+      "heroDescription": "Your rights aren't given, they're granted to you by law.",
       "heroCta": "Get Legal Advice",
       "heroWhatsApp": "WhatsApp",
-      "pageLabel": "Labor Law — Employees",
-      "intro1": "There are moments in your career when the ground shifts. A hearing summons. A termination letter. Deterioration of conditions. Or a vague feeling that something illegal is happening — but you have no idea how to prove it.",
+      "pageLabel": "Labor Law Employees",
+      "intro1": "There are moments in your career when the ground shifts. A hearing summons. A termination letter. Deterioration of conditions. Or a vague feeling that something illegal is happening but you have no idea how to prove it.",
       "intro2": "And at those moments, the inner voice almost always appears: \"Maybe it's better to give up...\" / \"It's uncomfortable...\" / \"I don't want trouble...\"",
-      "intro3": "But the truth? Your rights aren't given — they're granted to you by law.",
+      "intro3": "But the truth? Your rights aren't given, they're granted to you by law.",
       "situationsTitle": "Situations Where Employees Turn to Me",
       "situations": {
         "0": "Unlawful termination",
@@ -213,31 +220,31 @@
         "6": "Freelancer termination",
         "7": "Workplace harassment"
       },
-      "keyMessage": "\"In each of these cases — the gap between 'what they tell you' and 'what you deserve' can be tens to hundreds of thousands of shekels.\"",
+      "keyMessage": "\"In each of these cases, the gap between 'what they tell you' and 'what you deserve' can be tens to hundreds of thousands of shekels.\"",
       "whyActTitle": "Why It's Important to Act Now",
-      "whyActSubtitle": "Because every conversation, every email, and every document — changes the legal picture. Early consultation allows:",
+      "whyActSubtitle": "Because every conversation, every email, and every document changes the legal picture. Early consultation allows:",
       "whyActItems": {
         "0": "Building the right strategy",
         "1": "Preventing irreversible mistakes",
         "2": "Maximizing compensation or severance agreement",
         "3": "Protecting your professional reputation"
       },
-      "personalQuote": "\"I guide employees through their most sensitive moments: fear, confusion, anger, and uncertainty. My goal isn't just to manage a case — but to restore your control, confidence, and a fair outcome.\"",
-      "ctaTitle": "If you're facing a hearing, termination, or employment crisis — don't wait for the moment after.",
+      "personalQuote": "\"I guide employees through their most sensitive moments: fear, confusion, anger, and uncertainty. My goal isn't just to manage a case but to restore your control, confidence, and a fair outcome.\"",
+      "ctaTitle": "If you're facing a hearing, termination, or employment crisis, don't wait for the moment after.",
       "ctaCta": "Get Legal Advice"
     },
     "laborEmployers": {
-      "metaTitle": "Labor Law for Employers — Counsel, Contracts, Legal Defense",
-      "metaDescription": "Employee suing? Worried about legal exposure? Moran Sudry Chen provides employers with ongoing counsel, employment contracts, hearings, and claim defense.",
-      "ogTitle": "Labor Law for Employers | Moran Sudry Chen — Attorney",
-      "ogDescription": "Comprehensive legal support for employers — prevention, counsel, and defense.",
+      "metaTitle": "Labor Law for Employers Counsel, Contracts, Legal Defense",
+      "metaDescription": "Employee suing? Worried about legal exposure? Moran Sudry Hen provides employers with ongoing counsel, employment contracts, hearings, and claim defense.",
+      "ogTitle": "Labor Law for Employers | Moran Sudry Hen Attorney",
+      "ogDescription": "Comprehensive legal support for employers prevention, counsel, and defense.",
       "heroTitle": "Employee suing?",
-      "heroSubtitle": "Worried you're legally exposed — even though you acted in good faith?",
-      "heroDescription": "Managing employees isn't just an administrative task — it's also a heavy legal responsibility.",
+      "heroSubtitle": "Worried you're legally exposed even though you acted in good faith?",
+      "heroDescription": "Managing employees isn't just an administrative task, it's also a heavy legal responsibility.",
       "heroCta": "Legal Support for Employers",
       "heroWhatsApp": "WhatsApp",
-      "pageLabel": "Labor Law — Employers",
-      "intro": "Many employers come to me only when the lawsuit has already been filed. But then it turns out the problem started much earlier: an imprecise contract. An undocumented hearing. A vague job description. Or an attempt to \"be fair\" — without legal protection.",
+      "pageLabel": "Labor Law Employers",
+      "intro": "Many employers come to me only when the lawsuit has already been filed. But then it turns out the problem started much earlier: an imprecise contract. An undocumented hearing. A vague job description. Or an attempt to \"be fair\" without legal protection.",
       "exposuresTitle": "Common Legal Exposures",
       "exposures": {
         "0": "Unlawful termination claims",
@@ -248,9 +255,9 @@
         "5": "Wage disputes",
         "6": "Misclassified freelancers"
       },
-      "keyMessage": "\"A single lawsuit can cost hundreds of thousands of shekels — and damage the business's reputation too.\"",
+      "keyMessage": "\"A single lawsuit can cost hundreds of thousands of shekels and damage the business's reputation too.\"",
       "servicesTitle": "Comprehensive Legal Support for Employers",
-      "servicesSubtitle": "The goal: not just to defend when there's a problem — but to prevent it in advance.",
+      "servicesSubtitle": "The goal: not just to defend when there's a problem but to prevent it in advance.",
       "services": {
         "0": "Employment contracts and agreements",
         "1": "Policies and procedures",
@@ -259,20 +266,20 @@
         "4": "Ongoing counsel",
         "5": "Claim defense"
       },
-      "ctaTitle": "Protect your business — before there's a problem.",
+      "ctaTitle": "Protect your business before there's a problem.",
       "ctaCta": "Legal Support for Employers"
     },
     "torts": {
-      "metaTitle": "Torts — Work Accidents, Road Accidents, Personal Injury",
-      "metaDescription": "Injured in an accident? Attorney Moran Sudry Chen specializes in torts — work accidents, road accidents, personal injury & insurance claims. Professional guidance to compensation.",
-      "ogTitle": "Torts & Personal Injury | Moran Sudry Chen — Attorney",
-      "ogDescription": "Representing accident victims — work, road, personal injury & insurance claims.",
-      "heroTitle": "Injured in an accident — and life stopped for a moment?",
+      "metaTitle": "Torts Work Accidents, Road Accidents, Personal Injury",
+      "metaDescription": "Injured in an accident? Attorney Moran Sudry Hen specializes in torts work accidents, road accidents, personal injury & insurance claims. Professional guidance to compensation.",
+      "ogTitle": "Torts & Personal Injury | Moran Sudry Hen Attorney",
+      "ogDescription": "Representing accident victims work, road, personal injury & insurance claims.",
+      "heroTitle": "Injured in an accident and life stopped for a moment?",
       "heroDescription": "An accident doesn't just hurt the body. It affects your routine. Your livelihood. Your family. And your basic sense of security.",
       "heroCta": "Check Compensation Eligibility",
       "heroWhatsApp": "WhatsApp",
       "pageLabel": "Torts",
-      "intro": "And suddenly, instead of focusing on recovery — you have to deal with insurance, forms, investigations, and insurance companies.",
+      "intro": "And suddenly, instead of focusing on recovery you have to deal with insurance, forms, investigations, and insurance companies.",
       "areasTitle": "Tort Practice Areas",
       "areas": {
         "0": "Work accidents",
@@ -282,7 +289,7 @@
         "4": "Nursing claims",
         "5": "Claims against insurance companies"
       },
-      "keyMessage": "\"The goal is one: to get you the compensation you deserve — not the one they offer you.\"",
+      "keyMessage": "\"The goal is one: to get you the compensation you deserve, not the one they offer you.\"",
       "repTitle": "Professional Representation Against Large Organizations",
       "repSubtitle": "Because insurance companies and large organizations act with a clear interest: to pay as little as possible.",
       "repItems": {
@@ -291,16 +298,16 @@
         "2": "Negotiations",
         "3": "Litigation when needed"
       },
-      "ctaTitle": "You deserve fair compensation — not a low offer.",
+      "ctaTitle": "You deserve fair compensation, not a low offer.",
       "ctaCta": "Check Compensation Eligibility"
     },
     "nationalInsurance": {
-      "metaTitle": "National Insurance — Disability, Medical Committees, Rights",
-      "metaDescription": "Dealing with National Insurance? Attorney Moran Sudry Chen specializes in general disability, medical committees, loss of earning capacity, and full rights realization.",
-      "ogTitle": "National Insurance | Moran Sudry Chen — Attorney",
-      "ogDescription": "Representation in National Insurance — disability, medical committees & rights.",
-      "heroTitle": "Dealing with a medical condition — and a system that doesn't always see you?",
-      "heroDescription": "A medical struggle is hard enough on its own. But dealing with National Insurance — can be no less exhausting.",
+      "metaTitle": "National Insurance Disability, Medical Committees, Rights",
+      "metaDescription": "Dealing with National Insurance? Attorney Moran Sudry Hen specializes in general disability, medical committees, loss of earning capacity, and full rights realization.",
+      "ogTitle": "National Insurance | Moran Sudry Hen Attorney",
+      "ogDescription": "Representation in National Insurance disability, medical committees & rights.",
+      "heroTitle": "Dealing with a medical condition and a system that doesn't always see you?",
+      "heroDescription": "A medical struggle is hard enough on its own. But dealing with National Insurance can be no less exhausting.",
       "heroCta": "Check NI Eligibility",
       "heroWhatsApp": "WhatsApp",
       "pageLabel": "National Insurance",
@@ -322,25 +329,25 @@
         "2": "Appeals",
         "3": "Full rights realization"
       },
-      "keyMessage": "\"National Insurance is a right — not a favor.\"",
-      "ctaTitle": "Your medical condition requires attention — from the legal side too.",
+      "keyMessage": "\"National Insurance is a right, not a favor.\"",
+      "ctaTitle": "Your medical condition requires attention from the legal side too.",
       "ctaCta": "Check NI Eligibility"
     },
     "powerOfAttorney": {
-      "metaTitle": "Continuing Power of Attorney — Legal Planning for the Future",
-      "metaDescription": "A continuing power of attorney lets you decide in advance who will make decisions for you. Attorney Moran Sudry Chen guides the process simply and sensitively.",
-      "ogTitle": "Continuing Power of Attorney | Moran Sudry Chen — Attorney",
-      "ogDescription": "Legal planning for the future — with peace, confidence, and control.",
-      "heroTitle": "Plan for the future — out of love, not fear",
-      "heroSubtitle": "Plan for the future — while you're still in control.",
+      "metaTitle": "Continuing Power of Attorney Legal Planning for the Future",
+      "metaDescription": "A continuing power of attorney lets you decide in advance who will make decisions for you. Attorney Moran Sudry Hen guides the process simply and sensitively.",
+      "ogTitle": "Continuing Power of Attorney | Moran Sudry Hen Attorney",
+      "ogDescription": "Legal planning for the future with peace, confidence, and control.",
+      "heroTitle": "Plan for the future out of love, not fear",
+      "heroSubtitle": "Plan for the future while you're still in control.",
       "heroDescription": "A continuing power of attorney lets you decide in advance: who will make decisions for you, how your affairs will be managed, and what happens in case of incapacity.",
       "heroCta": "Schedule a Consultation",
       "heroSecondaryCta": "Phone Call",
       "pageLabel": "Continuing Power of Attorney",
       "realQuestionTitle": "The real question isn't \"what will happen\"",
-      "realQuestionP1": "But \"who will decide for me — and how.\" If one day, for medical or other reasons, you can't make decisions yourself — who will take care of you? Who will handle finances? Who will make medical decisions? And who will ensure your wishes are respected?",
+      "realQuestionP1": "But \"who will decide for me and how.\" If one day, for medical or other reasons, you can't make decisions yourself, who will take care of you? Who will handle finances? Who will make medical decisions? And who will ensure your wishes are respected?",
       "realQuestionP2": "And the quieter question: will the children get along... or will the situation create tensions and arguments?",
-      "controlTitle": "Continuing Power of Attorney — Control Even When It's Hard",
+      "controlTitle": "Continuing Power of Attorney Control Even When It's Hard",
       "controlItems": {
         "0": "Choose who will handle your affairs in the future",
         "1": "Decide how your finances will be managed",
@@ -353,25 +360,56 @@
         "0": "Children may disagree with each other",
         "1": "Medical decisions are made under pressure",
         "2": "Financial matters get complicated",
-        "3": "And sometimes — it even reaches court"
+        "3": "And sometimes it even reaches court"
       },
-      "familyConclusion": "A continuing power of attorney removes the uncertainty. It preserves your dignity — and keeps peace in the family.",
-      "loveTitle": "It's not a cold legal document — it's a document of love",
+      "familyConclusion": "A continuing power of attorney removes the uncertainty. It preserves your dignity and keeps peace in the family.",
+      "loveTitle": "It's not a cold legal document, it's a document of love",
       "loveP1": "Many people aged 70+ say: \"I'm doing this for the kids.\" / \"I don't want them to argue.\" / \"I want it to be clear to them what I want.\"",
-      "loveP2": "It's a gift of certainty. Of peace. Of parental responsibility — even at an older age.",
+      "loveP2": "It's a gift of certainty. Of peace. Of parental responsibility even at an older age.",
       "processTitle": "How the Process Works",
       "processSubtitle": "No pressure. No complexity. At a pace that suits you.",
       "steps": {
         "0": { "title": "Clear & Simple Explanation", "description": "An introductory meeting where we explain the process in clear language." },
         "1": { "title": "Defining Wishes & Instructions", "description": "What's important to you? What are your wishes? How would you like your affairs managed?" },
-        "2": { "title": "Choosing Power of Attorney Holders", "description": "Choosing the people who will act on your behalf — in medical, financial, and personal matters." },
+        "2": { "title": "Choosing Power of Attorney Holders", "description": "Choosing the people who will act on your behalf in medical, financial, and personal matters." },
         "3": { "title": "Drafting the Document", "description": "Writing a precise legal document that accurately reflects your wishes." },
         "4": { "title": "Signing & Legal Approval", "description": "Signing in the presence of a certified attorney and registration as required." }
       },
-      "warningTitle": "It's not too early — but sometimes it can be too late.",
-      "warningText": "A continuing power of attorney can only be made when a person is competent and understands. Therefore, it's important to arrange it in time — out of choice, not necessity.",
-      "ctaTitle": "Let's take care of the future — together, peacefully, with confidence.",
+      "warningTitle": "It's not too early but sometimes it can be too late.",
+      "warningText": "A continuing power of attorney can only be made when a person is competent and understands. Therefore, it's important to arrange it in time out of choice, not necessity.",
+      "ctaTitle": "Let's take care of the future together, peacefully, with confidence.",
       "ctaCta": "Schedule a Consultation"
+    },
+    "mediation": {
+      "metaTitle": "Mediation Professional Dispute Resolution",
+      "metaDescription": "Business, family, and employer-employee mediation. Attorney Moran Sudry Hen guides mediation processes with a professional and human approach.",
+      "ogTitle": "Mediation | Moran Sudry Hen Attorney",
+      "ogDescription": "Professional mediation for efficient and respectful dispute resolution.",
+      "heroTitle": "Professional Mediation, Resolution Without Court",
+      "heroDescription": "Not every dispute needs to reach the courtroom. Mediation allows you to resolve conflicts in a respectful, efficient, and cost-effective way.",
+      "heroCta": "Schedule a Mediation Session",
+      "heroWhatsApp": "WhatsApp",
+      "pageLabel": "Mediation",
+      "intro": "Mediation is a process where a neutral third party helps the sides reach an agreement. Unlike lengthy and expensive legal proceedings, mediation enables a quick resolution that preserves relationships.",
+      "areasTitle": "Mediation Areas",
+      "areas": {
+        "0": "Employer-employee disputes",
+        "1": "Business and commercial disputes",
+        "2": "Neighbor and community disputes",
+        "3": "Contractual disagreements",
+        "4": "Family disputes"
+      },
+      "keyMessage": "\"Good mediation doesn't just solve the problem, it preserves the relationship.\"",
+      "benefitsTitle": "Why Choose Mediation",
+      "benefitsSubtitle": "Mediation offers significant advantages over litigation:",
+      "benefits": {
+        "0": "Saves time and costs",
+        "1": "Preserves relationships",
+        "2": "Control over the outcome",
+        "3": "Complete confidentiality"
+      },
+      "ctaTitle": "Want to resolve a dispute without going to court?",
+      "ctaCta": "Schedule a Mediation Session"
     }
   }
 }

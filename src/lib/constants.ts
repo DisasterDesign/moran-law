@@ -16,5 +16,6 @@ export const WHATSAPP_SUBJECT_KEYS = [
   "torts",
   "national-insurance",
   "power-of-attorney",
+  "mediation",
   "other",
 ] as const;
