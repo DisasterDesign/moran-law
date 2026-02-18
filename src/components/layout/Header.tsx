@@ -27,13 +27,14 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed top-0 right-0 left-0 z-[1000] bg-transparent h-[60px] md:h-[72px]">
+      <header className="fixed top-[30px] right-0 left-0 z-[1000] bg-transparent h-[60px] md:h-[72px]">
         <div className="px-6 sm:px-8 lg:px-12 h-full flex items-center justify-between">
           <Link href="/" className="relative z-[1010]" aria-label={t("logoText")}>
             <svg
               data-logo-target
               viewBox="0 0 515 385"
-              className="h-[36px] md:h-[44px] w-auto transition-colors duration-300"
+              className="h-[72px] md:h-[72px] w-auto transition-colors duration-300"
+              style={{ filter: "drop-shadow(2px 2px 2px rgba(255,132,0,0.8))" }}
               aria-hidden="true"
             >
               <path
@@ -58,6 +59,7 @@ export default function Header() {
                     ? "bg-white/10 text-white border border-white/30 hover:bg-white/20"
                     : "bg-[#003149] text-white hover:bg-[#00405E]"
               }`}
+              style={{ filter: "drop-shadow(2px 2px 2px rgba(255,132,0,0.8))" }}
               aria-label={isMenuOpen ? t("menuAriaClose") : t("menuAriaOpen")}
               aria-expanded={isMenuOpen}
             >

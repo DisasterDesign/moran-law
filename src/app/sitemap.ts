@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/torts", priority: 0.9 },
     { path: "/national-insurance", priority: 0.9 },
     { path: "/power-of-attorney", priority: 0.9 },
+    { path: "/mediation", priority: 0.9 },
     { path: "/contact", priority: 0.7 },
   ];
 

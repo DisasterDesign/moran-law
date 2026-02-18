@@ -54,6 +54,7 @@ export default function LanguageSwitcher({
       <button
         onClick={() => setIsOpen(!isOpen)}
         className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 cursor-pointer ${buttonColorClass}`}
+        style={{ filter: "drop-shadow(2px 2px 2px rgba(255,132,0,0.8))" }}
         aria-label={t("ariaLabel")}
         aria-expanded={isOpen}
       >
