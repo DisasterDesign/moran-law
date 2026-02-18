@@ -1,5 +1,5 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import HeroSection from "@/components/sections/HeroSection";
+import HomeHero from "@/components/sections/HomeHero";
 import PracticeAreasGrid from "@/components/sections/PracticeAreasGrid";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import CTABanner from "@/components/sections/CTABanner";
@@ -16,18 +16,7 @@ export default async function HomePage({
 
   return (
     <>
-      <HeroSection
-        data={{
-          title: t("heroTitle"),
-          subtitle: t("heroSubtitle"),
-          description: t("heroDescription"),
-          ctaText: t("heroCta"),
-          ctaHref: "/contact",
-          secondaryCta: { text: t("heroWhatsApp"), href: "#whatsapp-form" },
-        }}
-        backgroundImage="/images/moran-portrait-full.jpg"
-        themeColor="navy-dark"
-      />
+      <HomeHero />
       <PracticeAreasGrid />
       <WhyChooseUs />
       <CTABanner title={t("ctaTitle")} ctaText={t("ctaCta")} />

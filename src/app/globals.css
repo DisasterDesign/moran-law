@@ -43,6 +43,29 @@
   }
 }
 
+/* Hero animations */
+@keyframes slideUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+@keyframes lineGrow {
+  to { width: 80px; }
+}
+@keyframes scrollPulse {
+  0%, 100% { opacity: 1; transform: translateY(0); }
+  50% { opacity: 0.3; transform: translateY(12px); }
+}
+@keyframes glowDrift {
+  0%, 100% { opacity: 0.5; transform: scale(1) translate(0, 0); }
+  33% { opacity: 1; transform: scale(1.15) translate(20px, -10px); }
+  66% { opacity: 0.7; transform: scale(0.95) translate(-15px, 15px); }
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
