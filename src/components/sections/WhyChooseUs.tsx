@@ -60,7 +60,7 @@ export default function WhyChooseUs() {
           {stats.map((stat, index) => (
             <AnimatedSection key={index} delay={index * 0.1}>
               <div className="bg-navy-dark aspect-[4/3] p-6 md:p-8 flex flex-col justify-center items-center text-center tile-hover-effect">
-                <div className="text-white font-black leading-none mb-2" style={{ fontSize: "clamp(2.5rem, 7vw, 5rem)" }}>
+                <div className="text-white font-bold leading-none mb-2" style={{ fontSize: "clamp(2.5rem, 7vw, 5rem)" }}>
                   <CounterNumber target={stat.number} suffix={stat.suffix} />
                 </div>
                 <p className="text-white/80 text-sm font-light">{stat.label}</p>

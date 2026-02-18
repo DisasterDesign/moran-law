@@ -18,7 +18,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Logo & description */}
           <div>
-            <Link href="/" className="text-2xl font-black text-text">
+            <Link href="/" className="text-2xl font-bold text-text">
               {tc("logoText")}
             </Link>
             <p className="text-text-secondary text-sm leading-relaxed mt-3 max-w-xs">

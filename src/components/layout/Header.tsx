@@ -31,7 +31,7 @@ export default function Header() {
         <div className="px-6 sm:px-8 lg:px-12 h-full flex items-center justify-between">
           <Link href="/" className="relative z-[1010]">
             <span
-              className={`text-xl md:text-2xl font-black tracking-tight transition-colors duration-300 ${
+              className={`text-xl md:text-2xl font-bold tracking-tight transition-colors duration-300 ${
                 showLight ? "text-white" : "text-text"
               }`}
             >

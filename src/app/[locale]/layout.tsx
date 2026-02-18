@@ -3,16 +3,16 @@ import { getMessages, setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import { Heebo } from "next/font/google";
+import { IBM_Plex_Sans_Hebrew } from "next/font/google";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import WhatsAppFAB from "@/components/layout/WhatsAppFAB";
 import { getLegalServiceSchema } from "@/lib/metadata";
 
-const heebo = Heebo({
+const ibmPlex = IBM_Plex_Sans_Hebrew({
   subsets: ["hebrew", "latin"],
-  weight: ["300", "400", "700", "800", "900"],
-  variable: "--font-heebo-var",
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
+  variable: "--font-ibm-plex-var",
   display: "swap",
 });
 
@@ -61,7 +61,7 @@ export default async function LocaleLayout({
   const dir = locale === "he" ? "rtl" : "ltr";
 
   return (
-    <html lang={locale} dir={dir} className={heebo.variable}>
+    <html lang={locale} dir={dir} className={ibmPlex.variable}>
       <head>
         <script
           type="application/ld+json"
@@ -70,7 +70,7 @@ export default async function LocaleLayout({
           }}
         />
       </head>
-      <body className="font-heebo bg-cream text-text antialiased">
+      <body className="font-ibm-plex bg-cream text-text antialiased">
         <NextIntlClientProvider messages={messages}>
           <Header />
           <main>{children}</main>

@@ -66,7 +66,7 @@ export default async function PowerOfAttorneyPage({
       {/* The real question */}
       <ContentSection>
         <AnimatedSection className="max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-text mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-text mb-6">
             {t("realQuestionTitle")}
           </h2>
           <p className="text-lg text-text leading-relaxed mb-4">
@@ -90,7 +90,7 @@ export default async function PowerOfAttorneyPage({
       {/* Why it matters for family */}
       <ContentSection className="bg-white">
         <AnimatedSection className="max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-text mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-text mb-6">
             {t("familyTitle")}
           </h2>
           <p className="text-lg text-text leading-relaxed mb-6">
@@ -113,7 +113,7 @@ export default async function PowerOfAttorneyPage({
       {/* Document of love */}
       <ContentSection>
         <AnimatedSection className="max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-text mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-text mb-6">
             {t("loveTitle")}
           </h2>
           <p className="text-lg text-text leading-relaxed mb-4">
@@ -161,7 +161,7 @@ export default async function PowerOfAttorneyPage({
       {/* Warning */}
       <ContentSection className="!bg-purple-deep text-white">
         <AnimatedSection className="max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-white mb-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
             {t("warningTitle")}
           </h2>
           <p className="text-lg text-white/80 leading-relaxed">
