@@ -1,5 +1,5 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import HomeHero from "@/components/sections/HomeHero";
+import HomePageClient from "@/components/sections/HomePageClient";
 import PracticeAreasGrid from "@/components/sections/PracticeAreasGrid";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import CTABanner from "@/components/sections/CTABanner";
@@ -15,12 +15,11 @@ export default async function HomePage({
   const t = await getTranslations("pages.home");
 
   return (
-    <>
-      <HomeHero />
+    <HomePageClient>
       <PracticeAreasGrid />
       <WhyChooseUs />
       <CTABanner title={t("ctaTitle")} ctaText={t("ctaCta")} />
       <WhatsAppForm />
-    </>
+    </HomePageClient>
   );
 }

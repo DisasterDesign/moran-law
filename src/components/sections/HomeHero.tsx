@@ -3,21 +3,21 @@
 import { useTranslations } from "next-intl";
 import HeroCanvas from "./HeroCanvas";
 
-export default function HomeHero() {
+export default function HomeHero({ introDone = true }: { introDone?: boolean }) {
   const t = useTranslations("pages.home");
   const practiceAreas = t("heroSubtitle").split("|").map((s: string) => s.trim());
 
   return (
     <section
       data-hero-dark
-      className="relative w-full h-screen flex flex-col justify-center items-center overflow-hidden"
+      className={`relative w-full h-screen flex flex-col justify-center items-center overflow-hidden${!introDone ? " hero-paused" : ""}`}
       style={{
         background:
           "radial-gradient(ellipse at 30% 20%, #004466 0%, #003149 40%, #001e2d 100%)",
       }}
     >
       {/* Canvas animation */}
-      <HeroCanvas />
+      <HeroCanvas paused={!introDone} />
 
       {/* Ambient glows */}
       <div

@@ -2,8 +2,10 @@
 
 import { useEffect, useRef } from "react";
 
-export default function HeroCanvas() {
+export default function HeroCanvas({ paused = false }: { paused?: boolean }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const pausedRef = useRef(paused);
+  pausedRef.current = paused;
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -210,6 +212,10 @@ export default function HeroCanvas() {
 
     // === ANIMATION LOOP ===
     function animate() {
+      if (pausedRef.current) {
+        animationId = requestAnimationFrame(animate);
+        return;
+      }
       ctx!.clearRect(0, 0, W, H);
 
       // Smooth mouse follow — lerp 0.04

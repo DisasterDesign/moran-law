@@ -78,6 +78,12 @@
   66% { opacity: 0.7; transform: scale(0.95) translate(-15px, 15px); }
 }
 
+/* Pause all hero animations until intro completes */
+.hero-paused,
+.hero-paused * {
+  animation-play-state: paused !important;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
