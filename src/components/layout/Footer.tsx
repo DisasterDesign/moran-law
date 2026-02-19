@@ -3,8 +3,8 @@
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import Container from "@/components/ui/Container";
-import { navRoutes as _navRoutes } from "@/data/navigation";
 import { PHONE_NUMBER, EMAIL } from "@/lib/constants";
+import { LOGO_PATH } from "@/data/logo";
 
 export default function Footer() {
   const tc = useTranslations("common");
@@ -18,8 +18,20 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Logo & description */}
           <div>
-            <Link href="/" className="text-2xl font-bold text-text">
-              {tc("logoText")}
+            <Link href="/" aria-label={tc("logoText")}>
+              <svg
+                viewBox="0 0 515 385"
+                className="h-[48px] w-auto"
+                style={{ filter: "drop-shadow(0 0 2px rgba(0,49,73,0.6))" }}
+                aria-hidden="true"
+              >
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d={LOGO_PATH}
+                  fill="white"
+                />
+              </svg>
             </Link>
             <p className="text-text-secondary text-sm leading-relaxed mt-3 max-w-xs">
               {tFooter("description")}
