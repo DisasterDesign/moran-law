@@ -2,7 +2,7 @@ export const WHATSAPP_NUMBER =
   process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "972506984909";
 export const PHONE_NUMBER = "+972 50-698-4909";
 export const EMAIL = "m.law.adv@gmail.com";
-export const ADDRESS = ""; // placeholder
+
 
 export const SOCIAL_LINKS = {
   facebook: "https://www.facebook.com/profile.php?id=61586572107646",

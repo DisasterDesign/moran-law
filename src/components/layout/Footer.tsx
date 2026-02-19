@@ -4,7 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import Container from "@/components/ui/Container";
 import { navRoutes as _navRoutes } from "@/data/navigation";
-import { SOCIAL_LINKS, PHONE_NUMBER, EMAIL, ADDRESS } from "@/lib/constants";
+import { SOCIAL_LINKS, PHONE_NUMBER, EMAIL } from "@/lib/constants";
 
 export default function Footer() {
   const tc = useTranslations("common");
@@ -115,7 +115,6 @@ export default function Footer() {
           <div>
             <h3 className="text-sm font-bold mb-4 text-text uppercase tracking-wide">{tc("contactTitle")}</h3>
             <ul className="space-y-3 text-sm text-text-secondary">
-              {ADDRESS && <li>{ADDRESS}</li>}
               {PHONE_NUMBER && (
                 <li>
                   <a href={`tel:${PHONE_NUMBER}`} className="hover:text-text transition-colors">

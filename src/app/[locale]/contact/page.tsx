@@ -4,7 +4,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import HeroSection from "@/components/sections/HeroSection";
 import WhatsAppForm from "@/components/forms/WhatsAppForm";
 import AnimatedSection from "@/components/ui/AnimatedSection";
-import { PHONE_NUMBER, EMAIL, ADDRESS, WHATSAPP_NUMBER } from "@/lib/constants";
+import { PHONE_NUMBER, EMAIL, WHATSAPP_NUMBER } from "@/lib/constants";
 
 export async function generateMetadata({
   params,
@@ -106,17 +106,6 @@ export default async function ContactPage({
               <p className="text-white/70 text-sm">{t("formDescription")}</p>
             </a>
           </AnimatedSection>
-        </div>
-      </section>
-
-      {/* Map placeholder */}
-      <section className="bg-cream">
-        <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
-          <div className="overflow-hidden bg-tile-neutral h-64 flex items-center justify-center">
-            <p className="text-text-secondary">
-              {t("mapPlaceholder")}
-            </p>
-          </div>
         </div>
       </section>
 
