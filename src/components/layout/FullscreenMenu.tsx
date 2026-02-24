@@ -109,75 +109,85 @@ export default function FullscreenMenu({ isOpen, onClose }: SideMenuProps) {
               exit="exit"
               className="px-6 py-6"
             >
-              {/* Accordion sections */}
+              {/* Practice areas accordion */}
               <div className="space-y-0">
-                {menuTabRoutes.map((tab, tabIndex) => (
-                  <div key={tab.id} className="border-b border-gray-100">
-                    <button
-                      onClick={() => setOpenAccordion(openAccordion === tab.id ? null : tab.id)}
-                      className="w-full flex items-center justify-between py-4 text-base font-bold text-text cursor-pointer"
+                <div className="border-b border-gray-100">
+                  <button
+                    onClick={() => setOpenAccordion(openAccordion === "practices" ? null : "practices")}
+                    className="w-full flex items-center justify-between py-4 text-base font-bold text-text cursor-pointer"
+                  >
+                    {tTabs("practices.label")}
+                    <svg
+                      className={`w-5 h-5 text-text-secondary transition-transform duration-200 ${openAccordion === "practices" ? "rotate-180" : ""}`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
                     >
-                      {tTabs(`${tab.id}.label`)}
-                      <svg
-                        className={`w-5 h-5 text-text-secondary transition-transform duration-200 ${openAccordion === tab.id ? "rotate-180" : ""}`}
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        strokeWidth="2"
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  <AnimatePresence>
+                    {openAccordion === "practices" && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.2 }}
+                        className="overflow-hidden"
                       >
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-                      </svg>
-                    </button>
-                    <AnimatePresence>
-                      {openAccordion === tab.id && (
-                        <motion.div
-                          initial={{ height: 0, opacity: 0 }}
-                          animate={{ height: "auto", opacity: 1 }}
-                          exit={{ height: 0, opacity: 0 }}
-                          transition={{ duration: 0.2 }}
-                          className="overflow-hidden"
-                        >
-                          <div className="pb-4">
-                            <p className="text-text-secondary text-sm mb-3">
-                              {tTabs(`${tab.id}.description`)}
-                            </p>
-                            {tab.id === "practices" && (
-                              <ul className="space-y-1.5 mb-4">
-                                {practiceAreaRoutes.map((route, i) => (
-                                  <li key={route.href}>
-                                    <Link
-                                      href={route.href}
-                                      onClick={onClose}
-                                      ref={tabIndex === 0 && i === 0 ? firstLinkRef : undefined}
-                                      className="group/link flex items-center gap-2 text-[#666] py-1.5 hover:text-text transition-colors"
-                                    >
-                                      <span className="w-1.5 h-1.5 bg-orange-bold rounded-full shrink-0" />
-                                      <span className="relative">
-                                        {tPractice(route.key)}
-                                        <span className="absolute bottom-0 left-0 right-0 h-[1px] bg-text origin-right scale-x-0 transition-transform duration-300 group-hover/link:origin-left group-hover/link:scale-x-100" />
-                                      </span>
-                                    </Link>
-                                  </li>
-                                ))}
-                              </ul>
-                            )}
-                            <Link
-                              href={tab.ctaHref}
-                              onClick={onClose}
-                              ref={tab.id !== "practices" && tabIndex === 0 ? firstLinkRef : undefined}
-                              className="inline-flex items-center gap-2 rounded-full border border-text px-4 py-1.5 text-sm font-bold text-text hover:bg-text hover:text-white transition-colors duration-200"
-                            >
-                              {tTabs(`${tab.id}.ctaLabel`)}
-                              <svg className="w-3 h-3 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                              </svg>
-                            </Link>
-                          </div>
-                        </motion.div>
-                      )}
-                    </AnimatePresence>
-                  </div>
-                ))}
+                        <div className="pb-4">
+                          <ul className="space-y-1.5">
+                            {practiceAreaRoutes.map((route, i) => (
+                              <li key={route.href}>
+                                <Link
+                                  href={route.href}
+                                  onClick={onClose}
+                                  ref={i === 0 ? firstLinkRef : undefined}
+                                  className="group/link flex items-center gap-2 text-[#666] py-1.5 hover:text-text transition-colors"
+                                >
+                                  <span className="w-1.5 h-1.5 bg-orange-bold rounded-full shrink-0" />
+                                  <span className="relative">
+                                    {tPractice(route.key)}
+                                    <span className="absolute bottom-0 left-0 right-0 h-[1px] bg-text origin-right scale-x-0 transition-transform duration-300 group-hover/link:origin-left group-hover/link:scale-x-100" />
+                                  </span>
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+
+                {/* About — direct link */}
+                <div className="border-b border-gray-100">
+                  <Link
+                    href="/about"
+                    onClick={onClose}
+                    className="flex items-center justify-between py-4 text-base font-bold text-text hover:text-text-secondary transition-colors"
+                  >
+                    {tTabs("about.label")}
+                    <svg className="w-5 h-5 text-text-secondary rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                </div>
+
+                {/* Contact — direct link */}
+                <div className="border-b border-gray-100">
+                  <Link
+                    href="/contact"
+                    onClick={onClose}
+                    className="flex items-center justify-between py-4 text-base font-bold text-text hover:text-text-secondary transition-colors"
+                  >
+                    {tTabs("contact.label")}
+                    <svg className="w-5 h-5 text-text-secondary rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                </div>
               </div>
 
               {/* Divider */}
