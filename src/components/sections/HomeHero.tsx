@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import HeroCanvas from "./HeroCanvas";
+import ScrollIndicator from "@/components/ui/ScrollIndicator";
 
 export default function HomeHero({ introDone = true }: { introDone?: boolean }) {
   const t = useTranslations("pages.home");
@@ -97,16 +98,7 @@ export default function HomeHero({ introDone = true }: { introDone?: boolean }) 
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-9 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2.5 opacity-0 animate-fade-in-scroll">
-        <div className="w-1.5 h-1.5 rounded-full bg-[#8A0051] animate-scroll-pulse" />
-        <div
-          className="w-px h-9"
-          style={{
-            background:
-              "linear-gradient(to bottom, rgba(255,255,255,0.25), transparent)",
-          }}
-        />
-      </div>
+      <ScrollIndicator />
     </section>
   );
 }

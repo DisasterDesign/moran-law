@@ -44,6 +44,7 @@
   --animate-fade-in-late: fade-in 1s ease 2.4s both;
   --animate-glow-drift: glow-drift 12s ease-in-out infinite;
   --animate-scroll-pulse: scroll-pulse 2s ease-in-out infinite;
+  --animate-bounce-slow: bounce-slow 1.8s ease-in-out infinite;
 }
 
 @keyframes pulse-subtle {
@@ -77,6 +78,10 @@
   0%, 100% { opacity: 0.5; transform: scale(1) translate(0, 0); }
   33% { opacity: 1; transform: scale(1.15) translate(20px, -10px); }
   66% { opacity: 0.7; transform: scale(0.95) translate(-15px, 15px); }
+}
+@keyframes bounce-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(5px); }
 }
 
 /* Logo Y-axis flip */
