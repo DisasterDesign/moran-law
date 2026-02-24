@@ -2,6 +2,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import HomePageClient from "@/components/sections/HomePageClient";
 import PracticeAreasGrid from "@/components/sections/PracticeAreasGrid";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
+import TeamSection from "@/components/sections/TeamSection";
 import CTABanner from "@/components/sections/CTABanner";
 import WhatsAppForm from "@/components/forms/WhatsAppForm";
 
@@ -18,6 +19,7 @@ export default async function HomePage({
     <HomePageClient>
       <PracticeAreasGrid />
       <WhyChooseUs />
+      <TeamSection />
       <CTABanner title={t("ctaTitle")} ctaText={t("ctaCta")} />
       <WhatsAppForm />
     </HomePageClient>

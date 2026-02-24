@@ -50,7 +50,7 @@ export default function Header() {
               data-logo-target
               viewBox="0 0 515 385"
               className={`h-[72px] md:h-[72px] w-auto transition-colors duration-300 ${logoFlip ? "logo-flip" : "logo-hover-flip"}`}
-              style={{ filter: "drop-shadow(2px 2px 2px rgba(255,132,0,0.8))" }}
+              style={{ filter: "drop-shadow(2px 2px 2px rgba(138,0,81,0.8))" }}
               aria-hidden="true"
             >
               <path
@@ -75,7 +75,7 @@ export default function Header() {
                     ? "bg-white/10 text-white border border-white/30 hover:bg-white/20"
                     : "bg-[#003149] text-white hover:bg-[#00405E]"
               }`}
-              style={{ filter: "drop-shadow(2px 2px 2px rgba(255,132,0,0.8))" }}
+              style={{ filter: "drop-shadow(2px 2px 2px rgba(138,0,81,0.8))" }}
               aria-label={isMenuOpen ? t("menuAriaClose") : t("menuAriaOpen")}
               aria-expanded={isMenuOpen}
             >

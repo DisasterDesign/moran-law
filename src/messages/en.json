@@ -98,6 +98,17 @@
       "4": "Working with companies, institutions, and national insurance"
     }
   },
+  "team": {
+    "title": "Our Team",
+    "member1": {
+      "name": "Moran Sudry Hen",
+      "role": "Attorney & Mediator"
+    },
+    "member2": {
+      "name": "Amir Hen",
+      "role": "Attorney"
+    }
+  },
   "whatsappForm": {
     "defaultTitle": "Want to talk? We're here",
     "defaultSubtitle": "Fill in your details and we'll get back to you via WhatsApp",

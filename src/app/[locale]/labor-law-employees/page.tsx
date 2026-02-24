@@ -52,6 +52,7 @@ export default async function LaborLawEmployeesPage({
           },
         }}
         themeColor="orange-bold"
+        backgroundImage="/images/moran-portrait-full.jpg"
         pageLabel={t("pageLabel")}
       />
 
@@ -78,7 +79,7 @@ export default async function LaborLawEmployeesPage({
         items={situations}
         columns={2}
         variant="cards"
-        themeColor="#FF7D00"
+        themeColor="#8A0051"
       />
 
       {/* Key message */}
@@ -97,7 +98,7 @@ export default async function LaborLawEmployeesPage({
         items={whyActItems}
         columns={2}
         variant="checkmarks"
-        themeColor="#FF7D00"
+        themeColor="#8A0051"
       />
 
       {/* Personal section */}

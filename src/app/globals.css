@@ -10,7 +10,7 @@
   /* Practice Area Colors */
   --color-blue-electric: #00A1C0;
   --color-navy-dark: #003149;
-  --color-orange-bold: #FF7D00;
+  --color-orange-bold: #8A0051;
   --color-teal-green: #7BCCEA;
   --color-purple-deep: #003149;
 
@@ -25,7 +25,7 @@
   --color-whatsapp-dark: #008099;
 
   /* CTA / Accent */
-  --color-accent: #FF7D00;
+  --color-accent: #8A0051;
 
   /* Font */
   --font-ibm-plex: var(--font-ibm-plex-var), sans-serif;

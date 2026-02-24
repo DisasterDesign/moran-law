@@ -60,6 +60,7 @@ export default async function PowerOfAttorneyPage({
           },
         }}
         themeColor="purple-deep"
+        backgroundImage="/images/moran-portrait-full.jpg"
         pageLabel={t("pageLabel")}
       />
 

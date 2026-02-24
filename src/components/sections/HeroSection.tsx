@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Link } from "@/i18n/navigation";
 import Button from "@/components/ui/Button";
+import ScrollIndicator from "@/components/ui/ScrollIndicator";
 import type { HeroData, ThemeColor } from "@/types";
 
 interface HeroSectionProps {
@@ -15,7 +16,7 @@ interface HeroSectionProps {
 const colorMap: Record<string, string> = {
   "blue-electric": "#00A1C0",
   "navy-dark": "#003149",
-  "orange-bold": "#FF7D00",
+  "orange-bold": "#8A0051",
   "teal-green": "#7BCCEA",
   "purple-deep": "#003149",
   default: "#003149",
@@ -116,6 +117,9 @@ export default function HeroSection({
           </motion.div>
         </motion.div>
       </div>
+
+      {/* Scroll indicator */}
+      <ScrollIndicator />
     </section>
   );
 }

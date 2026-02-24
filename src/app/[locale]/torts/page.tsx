@@ -51,6 +51,7 @@ export default async function TortsPage({
           },
         }}
         themeColor="orange-bold"
+        backgroundImage="/images/moran-portrait-full.jpg"
         pageLabel={t("pageLabel")}
       />
 
@@ -69,7 +70,7 @@ export default async function TortsPage({
         items={areas}
         columns={3}
         variant="cards"
-        themeColor="#FF7D00"
+        themeColor="#8A0051"
       />
 
       {/* Key message */}
@@ -88,7 +89,7 @@ export default async function TortsPage({
         items={repItems}
         columns={2}
         variant="checkmarks"
-        themeColor="#FF7D00"
+        themeColor="#8A0051"
       />
 
       <CTABanner

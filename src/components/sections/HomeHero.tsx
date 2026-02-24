@@ -27,7 +27,7 @@ export default function HomeHero({ introDone = true }: { introDone?: boolean }) 
       <div
         className="absolute bottom-[20%] left-[10%] w-[350px] h-[350px] rounded-full pointer-events-none animate-glow-drift"
         style={{
-          background: "rgba(255,125,0,0.05)",
+          background: "rgba(138,0,81,0.05)",
           filter: "blur(80px)",
           animationDelay: "-4s",
         }}
@@ -43,18 +43,18 @@ export default function HomeHero({ introDone = true }: { introDone?: boolean }) 
 
       {/* Corner geometric accents */}
       <div className="absolute top-[100px] end-12 z-[5] opacity-0 animate-fade-in-late pointer-events-none">
-        <div className="inline-block w-2 h-2 border border-[rgba(255,125,0,0.25)] m-1.5" />
-        <div className="inline-block w-2 h-2 border border-[rgba(255,125,0,0.3)] bg-[rgba(255,125,0,0.15)] m-1.5" />
+        <div className="inline-block w-2 h-2 border border-[rgba(138,0,81,0.25)] m-1.5" />
+        <div className="inline-block w-2 h-2 border border-[rgba(138,0,81,0.3)] bg-[rgba(138,0,81,0.15)] m-1.5" />
         <br />
-        <div className="inline-block w-2 h-2 border border-[rgba(255,125,0,0.3)] bg-[rgba(255,125,0,0.15)] m-1.5" />
-        <div className="inline-block w-2 h-2 border border-[rgba(255,125,0,0.25)] m-1.5" />
+        <div className="inline-block w-2 h-2 border border-[rgba(138,0,81,0.3)] bg-[rgba(138,0,81,0.15)] m-1.5" />
+        <div className="inline-block w-2 h-2 border border-[rgba(138,0,81,0.25)] m-1.5" />
       </div>
       <div className="absolute bottom-20 start-12 z-[5] opacity-0 animate-fade-in-late pointer-events-none">
-        <div className="inline-block w-2 h-2 border border-[rgba(255,125,0,0.3)] bg-[rgba(255,125,0,0.15)] m-1.5" />
-        <div className="inline-block w-2 h-2 border border-[rgba(255,125,0,0.25)] m-1.5" />
+        <div className="inline-block w-2 h-2 border border-[rgba(138,0,81,0.3)] bg-[rgba(138,0,81,0.15)] m-1.5" />
+        <div className="inline-block w-2 h-2 border border-[rgba(138,0,81,0.25)] m-1.5" />
         <br />
-        <div className="inline-block w-2 h-2 border border-[rgba(255,125,0,0.25)] m-1.5" />
-        <div className="inline-block w-2 h-2 border border-[rgba(255,125,0,0.3)] bg-[rgba(255,125,0,0.15)] m-1.5" />
+        <div className="inline-block w-2 h-2 border border-[rgba(138,0,81,0.25)] m-1.5" />
+        <div className="inline-block w-2 h-2 border border-[rgba(138,0,81,0.3)] bg-[rgba(138,0,81,0.15)] m-1.5" />
       </div>
 
       {/* Text content */}
@@ -71,7 +71,7 @@ export default function HomeHero({ introDone = true }: { introDone?: boolean }) 
           className="h-0.5 w-20 mx-auto mt-4 mb-7 origin-center animate-line-stretch"
           style={{
             background:
-              "linear-gradient(90deg, transparent, #FF7D00, transparent)",
+              "linear-gradient(90deg, transparent, #8A0051, transparent)",
           }}
         />
 
@@ -82,7 +82,7 @@ export default function HomeHero({ introDone = true }: { introDone?: boolean }) 
               key={i}
               className={`text-[clamp(13px,1.4vw,16px)] font-light text-white/50 tracking-wider animate-fade-down-${i + 1}${
                 i > 0
-                  ? " relative before:content-[''] before:absolute before:-start-4 before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-1 before:rounded-full before:bg-[#FF7D00] before:opacity-60"
+                  ? " relative before:content-[''] before:absolute before:-start-4 before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-1 before:rounded-full before:bg-[#8A0051] before:opacity-60"
                   : ""
               }`}
             >
@@ -98,7 +98,7 @@ export default function HomeHero({ introDone = true }: { introDone?: boolean }) 
 
       {/* Scroll indicator */}
       <div className="absolute bottom-9 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2.5 opacity-0 animate-fade-in-scroll">
-        <div className="w-1.5 h-1.5 rounded-full bg-[#FF7D00] animate-scroll-pulse" />
+        <div className="w-1.5 h-1.5 rounded-full bg-[#8A0051] animate-scroll-pulse" />
         <div
           className="w-px h-9"
           style={{

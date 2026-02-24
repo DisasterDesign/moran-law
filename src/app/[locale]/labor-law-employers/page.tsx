@@ -52,6 +52,7 @@ export default async function LaborLawEmployersPage({
           },
         }}
         themeColor="navy-dark"
+        backgroundImage="/images/moran-portrait-full.jpg"
         pageLabel={t("pageLabel")}
       />
 

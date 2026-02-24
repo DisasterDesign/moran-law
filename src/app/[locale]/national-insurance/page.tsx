@@ -51,6 +51,7 @@ export default async function NationalInsurancePage({
           },
         }}
         themeColor="teal-green"
+        backgroundImage="/images/moran-portrait-full.jpg"
         pageLabel={t("pageLabel")}
       />
 
