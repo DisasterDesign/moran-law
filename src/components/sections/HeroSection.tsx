@@ -40,7 +40,7 @@ export default function HeroSection({
       {/* Optional background image */}
       {backgroundImage && (
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-30"
+          className="absolute inset-0 bg-cover bg-top opacity-30"
           style={{ backgroundImage: `url(${backgroundImage})` }}
         />
       )}
