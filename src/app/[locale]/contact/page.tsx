@@ -60,7 +60,7 @@ export default async function ContactPage({
             <a
               href={PHONE_NUMBER ? `tel:${PHONE_NUMBER}` : "#"}
               className="block p-8 bg-tile-neutral group tile-hover-effect text-center flex flex-col items-center justify-center min-h-[140px]"
-              style={{ '--tile-color': '#8A0051' } as CSSProperties}
+              style={{ '--tile-color': '#2563EB' } as CSSProperties}
             >
               <h3 className="text-lg font-bold mb-2 group-hover:text-white">{t("phone")}</h3>
               <p className="text-text-secondary text-sm group-hover:text-white/70">

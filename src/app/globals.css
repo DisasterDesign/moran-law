@@ -10,7 +10,7 @@
   /* Practice Area Colors */
   --color-blue-electric: #00A1C0;
   --color-navy-dark: #003149;
-  --color-orange-bold: #8A0051;
+  --color-orange-bold: #2563EB;
   --color-teal-green: #7BCCEA;
   --color-purple-deep: #003149;
 
@@ -25,7 +25,7 @@
   --color-whatsapp-dark: #008099;
 
   /* CTA / Accent */
-  --color-accent: #8A0051;
+  --color-accent: #2563EB;
 
   /* Font */
   --font-ibm-plex: var(--font-ibm-plex-var), sans-serif;
@@ -39,7 +39,8 @@
   --animate-fade-down-3: fade-down 0.6s ease 1.54s both;
   --animate-fade-down-4: fade-down 0.6s ease 1.66s both;
   --animate-fade-down-5: fade-down 0.6s ease 1.78s both;
-  --animate-fade-down-tag: fade-down 0.8s ease 2.0s both;
+  --animate-fade-down-6: fade-down 0.6s ease 1.9s both;
+  --animate-fade-down-tag: fade-down 0.8s ease 2.1s both;
   --animate-fade-in-scroll: fade-in 0.8s ease 2.6s both;
   --animate-fade-in-late: fade-in 1s ease 2.4s both;
   --animate-glow-drift: glow-drift 12s ease-in-out infinite;

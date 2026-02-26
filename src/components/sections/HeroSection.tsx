@@ -16,7 +16,7 @@ interface HeroSectionProps {
 const colorMap: Record<string, string> = {
   "blue-electric": "#00A1C0",
   "navy-dark": "#003149",
-  "orange-bold": "#8A0051",
+  "orange-bold": "#2563EB",
   "teal-green": "#7BCCEA",
   "purple-deep": "#003149",
   default: "#003149",
@@ -29,6 +29,7 @@ export default function HeroSection({
   pageLabel,
 }: HeroSectionProps) {
   const bgColor = colorMap[themeColor] || colorMap.default;
+  const isLightBg = themeColor === "teal-green";
 
   return (
     <section
@@ -39,7 +40,7 @@ export default function HeroSection({
       {/* Optional background image */}
       {backgroundImage && (
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-15"
+          className="absolute inset-0 bg-cover bg-center opacity-30"
           style={{ backgroundImage: `url(${backgroundImage})` }}
         />
       )}
@@ -91,12 +92,20 @@ export default function HeroSection({
             {data.title}
           </h1>
           {data.subtitle && (
-            <p className="text-xl md:text-2xl text-white/85 mb-4 font-light leading-relaxed">
+            <p className={`text-xl md:text-2xl mb-4 leading-relaxed ${
+              isLightBg
+                ? "text-white font-medium drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]"
+                : "text-white/85 font-light"
+            }`}>
               {data.subtitle}
             </p>
           )}
           {data.description && (
-            <p className="text-lg md:text-xl text-white/70 mb-10 max-w-2xl leading-relaxed">
+            <p className={`text-lg md:text-xl mb-10 max-w-2xl leading-relaxed ${
+              isLightBg
+                ? "text-white font-medium drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]"
+                : "text-white/70"
+            }`}>
               {data.description}
             </p>
           )}

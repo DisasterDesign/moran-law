@@ -4,7 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 
-const TILE_BG = "#8A0051";
+const TILE_BG = "#2563EB";
 
 /* Labor law tiles (side by side) */
 const laborTiles = [

@@ -79,7 +79,7 @@ export default async function LaborLawEmployeesPage({
         items={situations}
         columns={2}
         variant="cards"
-        themeColor="#8A0051"
+        themeColor="#2563EB"
       />
 
       {/* Key message */}
@@ -98,7 +98,7 @@ export default async function LaborLawEmployeesPage({
         items={whyActItems}
         columns={2}
         variant="checkmarks"
-        themeColor="#8A0051"
+        themeColor="#2563EB"
       />
 
       {/* Personal section */}

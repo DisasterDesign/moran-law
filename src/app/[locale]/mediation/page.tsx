@@ -70,7 +70,7 @@ export default async function MediationPage({
         items={areas}
         columns={3}
         variant="cards"
-        themeColor="#8A0051"
+        themeColor="#2563EB"
       />
 
       {/* Key message */}
@@ -89,7 +89,7 @@ export default async function MediationPage({
         items={benefits}
         columns={2}
         variant="checkmarks"
-        themeColor="#8A0051"
+        themeColor="#2563EB"
       />
 
       <CTABanner

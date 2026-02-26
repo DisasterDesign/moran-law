@@ -65,7 +65,7 @@ export default function HeroCanvas({ paused = false }: { paused?: boolean }) {
         this.segments = 80;
 
         const palettes = [
-          { r: 138, g: 0, b: 81 }, // purple
+          { r: 37, g: 99, b: 235 }, // purple
           { r: 0, g: 161, b: 192 }, // turquoise
           { r: 123, g: 204, b: 234 }, // light blue
           { r: 255, g: 255, b: 255 }, // white
@@ -162,7 +162,7 @@ export default function HeroCanvas({ paused = false }: { paused?: boolean }) {
         this.life = 0;
         this.maxLife = 300 + Math.random() * 400;
         const colors = [
-          "138,0,81",
+          "37,99,235",
           "0,161,192",
           "123,204,234",
           "255,255,255",
