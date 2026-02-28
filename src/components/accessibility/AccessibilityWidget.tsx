@@ -88,7 +88,7 @@ export default function AccessibilityWidget() {
       {/* Floating button */}
       <button
         onClick={() => setOpen((v) => !v)}
-        className="fixed bottom-6 start-6 z-50 w-14 h-14 rounded-full bg-[#003149] text-white shadow-lg hover:bg-[#00405E] transition-colors flex items-center justify-center"
+        className="fixed bottom-6 left-6 z-50 w-14 h-14 rounded-full bg-[#003149] text-white shadow-lg hover:bg-[#00405E] transition-colors flex items-center justify-center"
         aria-label={open ? t("closeMenu") : t("openMenu")}
       >
         <svg
@@ -111,7 +111,7 @@ export default function AccessibilityWidget() {
       {/* Panel */}
       {open && (
         <div
-          className="fixed bottom-24 start-6 z-50 w-72 bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden"
+          className="fixed bottom-24 left-6 z-50 w-72 bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden"
           role="dialog"
           aria-label={t("title")}
         >
