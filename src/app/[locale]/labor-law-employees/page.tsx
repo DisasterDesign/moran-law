@@ -5,6 +5,7 @@ import ContentSection from "@/components/sections/ContentSection";
 import BulletList from "@/components/sections/BulletList";
 import CTABanner from "@/components/sections/CTABanner";
 import WhatsAppForm from "@/components/forms/WhatsAppForm";
+import ImageBanner from "@/components/sections/ImageBanner";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 
 export async function generateMetadata({
@@ -52,7 +53,7 @@ export default async function LaborLawEmployeesPage({
           },
         }}
         themeColor="orange-bold"
-        backgroundImage="/images/moran-portrait-full.jpg"
+        backgroundImage="/images/employees-conflict.jpg"
         pageLabel={t("pageLabel")}
       />
 
@@ -73,6 +74,8 @@ export default async function LaborLawEmployeesPage({
         </div>
       </ContentSection>
 
+      <ImageBanner src="/images/employees-timeclock.jpg" alt="" />
+
       {/* Situations */}
       <BulletList
         title={t("situationsTitle")}
@@ -81,6 +84,8 @@ export default async function LaborLawEmployeesPage({
         variant="cards"
         themeColor="#2563EB"
       />
+
+      <ImageBanner src="/images/employees-pregnant.jpg" alt="" />
 
       {/* Key message */}
       <ContentSection>
@@ -100,6 +105,8 @@ export default async function LaborLawEmployeesPage({
         variant="checkmarks"
         themeColor="#2563EB"
       />
+
+      <ImageBanner src="/images/employees-workers.jpg" alt="" />
 
       {/* Personal section */}
       <ContentSection className="bg-white">

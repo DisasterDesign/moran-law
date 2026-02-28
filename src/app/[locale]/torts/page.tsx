@@ -51,7 +51,7 @@ export default async function TortsPage({
           },
         }}
         themeColor="orange-bold"
-        backgroundImage="/images/moran-portrait-full.jpg"
+        backgroundImage="/images/pexels-document-handoff.jpg"
         pageLabel={t("pageLabel")}
       />
 

@@ -5,6 +5,7 @@ import ContentSection from "@/components/sections/ContentSection";
 import BulletList from "@/components/sections/BulletList";
 import CTABanner from "@/components/sections/CTABanner";
 import WhatsAppForm from "@/components/forms/WhatsAppForm";
+import ImageBanner from "@/components/sections/ImageBanner";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 
 export async function generateMetadata({
@@ -51,7 +52,7 @@ export default async function MediationPage({
           },
         }}
         themeColor="orange-bold"
-        backgroundImage="/images/moran-portrait-full.jpg"
+        backgroundImage="/images/mediation-meeting.jpg"
         pageLabel={t("pageLabel")}
       />
 
@@ -63,6 +64,8 @@ export default async function MediationPage({
           </p>
         </AnimatedSection>
       </ContentSection>
+
+      <ImageBanner src="/images/mediation-office.jpg" alt="" />
 
       {/* Mediation areas */}
       <BulletList
@@ -91,6 +94,8 @@ export default async function MediationPage({
         variant="checkmarks"
         themeColor="#2563EB"
       />
+
+      <ImageBanner src="/images/pexels-handshake.jpg" alt="" />
 
       <CTABanner
         title={t("ctaTitle")}

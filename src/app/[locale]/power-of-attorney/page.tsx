@@ -5,6 +5,7 @@ import ContentSection from "@/components/sections/ContentSection";
 import BulletList from "@/components/sections/BulletList";
 import CTABanner from "@/components/sections/CTABanner";
 import WhatsAppForm from "@/components/forms/WhatsAppForm";
+import ImageBanner from "@/components/sections/ImageBanner";
 import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import AnimatedSection from "@/components/ui/AnimatedSection";
@@ -60,7 +61,7 @@ export default async function PowerOfAttorneyPage({
           },
         }}
         themeColor="purple-deep"
-        backgroundImage="/images/moran-portrait-full.jpg"
+        backgroundImage="/images/poa-signing.jpg"
         pageLabel={t("pageLabel")}
       />
 
@@ -78,6 +79,8 @@ export default async function PowerOfAttorneyPage({
           </p>
         </AnimatedSection>
       </ContentSection>
+
+      <ImageBanner src="/images/poa-reviewing.jpg" alt="" />
 
       {/* Control */}
       <BulletList

@@ -12,7 +12,7 @@ const teamMembers = [
   },
   {
     key: "member2",
-    image: "/images/moran-portrait-bw.jpg",
+    image: "/images/moran-bw-new.jpg",
     linkedin: "https://www.linkedin.com/in/placeholder2",
   },
 ];

@@ -5,6 +5,7 @@ import ContentSection from "@/components/sections/ContentSection";
 import BulletList from "@/components/sections/BulletList";
 import CTABanner from "@/components/sections/CTABanner";
 import WhatsAppForm from "@/components/forms/WhatsAppForm";
+import ImageBanner from "@/components/sections/ImageBanner";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 
 export async function generateMetadata({
@@ -52,7 +53,7 @@ export default async function LaborLawEmployersPage({
           },
         }}
         themeColor="navy-dark"
-        backgroundImage="/images/moran-portrait-full.jpg"
+        backgroundImage="/images/employers-signing.jpg"
         pageLabel={t("pageLabel")}
       />
 
@@ -64,6 +65,8 @@ export default async function LaborLawEmployersPage({
           </p>
         </AnimatedSection>
       </ContentSection>
+
+      <ImageBanner src="/images/labor-consultation.jpg" alt="" />
 
       {/* Legal exposures */}
       <BulletList
@@ -92,6 +95,8 @@ export default async function LaborLawEmployersPage({
         variant="checkmarks"
         themeColor="#003149"
       />
+
+      <ImageBanner src="/images/pexels-reviewing-docs.jpg" alt="" />
 
       <CTABanner
         title={t("ctaTitle")}
