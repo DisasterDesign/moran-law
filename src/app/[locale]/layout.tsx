@@ -7,6 +7,7 @@ import { IBM_Plex_Sans_Hebrew } from "next/font/google";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import WhatsAppFAB from "@/components/layout/WhatsAppFAB";
+import AccessibilityWidget from "@/components/accessibility/AccessibilityWidget";
 import { getLegalServiceSchema, getAttorneySchema } from "@/lib/metadata";
 
 const ibmPlex = IBM_Plex_Sans_Hebrew({
@@ -116,6 +117,7 @@ export default async function LocaleLayout({
           <main>{children}</main>
           <Footer />
           <WhatsAppFAB />
+          <AccessibilityWidget />
         </NextIntlClientProvider>
       </body>
     </html>

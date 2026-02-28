@@ -62,6 +62,11 @@ export default function Footer() {
                   {tNav("contact")}
                 </Link>
               </li>
+              <li>
+                <Link href="/privacy-policy" className="text-text-secondary hover:text-text transition-colors text-sm">
+                  {tFooter("privacyPolicy")}
+                </Link>
+              </li>
             </ul>
           </div>
 

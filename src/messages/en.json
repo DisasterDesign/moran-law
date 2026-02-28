@@ -145,7 +145,8 @@
     "instagram": "Instagram",
     "linkedin": "LinkedIn",
     "tiktok": "TikTok",
-    "youtube": "YouTube"
+    "youtube": "YouTube",
+    "privacyPolicy": "Privacy Policy"
   },
   "notFound": {
     "code": "404",
@@ -426,6 +427,50 @@
       },
       "ctaTitle": "Want to resolve a dispute without going to court?",
       "ctaCta": "Schedule a Mediation Session"
+    },
+    "privacyPolicy": {
+      "metaTitle": "Privacy Policy",
+      "metaDescription": "Privacy policy of Moran Sudry Hen Law Office",
+      "ogTitle": "Privacy Policy | Moran Sudry Hen",
+      "ogDescription": "Privacy policy of Moran Sudry Hen Law Office",
+      "heroTitle": "Privacy Policy",
+      "heroDescription": "How we protect your privacy",
+      "heroCta": "Contact Us",
+      "pageLabel": "Privacy Policy",
+      "generalTitle": "General",
+      "generalText": "Moran Sudry Hen Law Office (\"the Office\") respects the privacy of website users. This privacy policy explains how we collect, use, and protect your personal information, in accordance with the Protection of Privacy Law, 5741-1981.",
+      "collectedTitle": "Information We Collect",
+      "collectedText": "We may collect the following information: full name, phone number, and email address as provided through the website contact form; technical information such as IP address, browser type, and operating system; browsing and usage data.",
+      "purposeTitle": "Purpose of Information Use",
+      "purposeText": "The information collected is used for the following purposes: responding to inquiries and legal consultation requests; contacting applicants; improving the website experience; compliance with legal requirements.",
+      "cookiesTitle": "Cookies",
+      "cookiesText": "The website may use cookies to improve browsing experience, analyze traffic, and save accessibility preferences. You can block cookies through your browser settings.",
+      "sharingTitle": "Sharing Information with Third Parties",
+      "sharingText": "The Office does not sell, rent, or transfer personal information to third parties, except in the following cases: as required by law or court order; for providing legal services to a client (subject to their consent).",
+      "securityTitle": "Information Security",
+      "securityText": "The Office takes reasonable security measures to protect personal information provided on the website. However, absolute protection of information transmitted over the internet cannot be guaranteed.",
+      "rightsTitle": "User Rights",
+      "rightsText": "Under the Protection of Privacy Law, you have the right to review personal information collected about you, request its correction, or request its deletion. For such requests, please contact us using the contact information on the website.",
+      "updatesTitle": "Policy Updates",
+      "updatesText": "The Office reserves the right to update this privacy policy from time to time. Material changes will be published on the website.",
+      "contactTitle": "Contact",
+      "contactText": "For questions regarding the privacy policy, please contact us by email: m.law.adv@gmail.com or by phone: 050-698-4909."
     }
+  },
+  "accessibility": {
+    "title": "Accessibility",
+    "openMenu": "Open accessibility menu",
+    "closeMenu": "Close accessibility menu",
+    "fontSize": "Font Size",
+    "increase": "Increase",
+    "decrease": "Decrease",
+    "reset": "Reset",
+    "highContrast": "High Contrast",
+    "grayscale": "Grayscale",
+    "highlightLinks": "Highlight Links",
+    "readableFont": "Readable Font",
+    "stopAnimations": "Stop Animations",
+    "bigCursor": "Large Cursor",
+    "resetAll": "Reset All"
   }
 }

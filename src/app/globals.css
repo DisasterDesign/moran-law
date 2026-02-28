@@ -199,3 +199,54 @@
     letter-spacing: 0.04em;
   }
 }
+
+/* ── Accessibility overrides ── */
+html.a11y-font-1 body { font-size: 1.35rem; }
+html.a11y-font-2 body { font-size: 1.55rem; }
+
+html.a11y-high-contrast body {
+  background: #000 !important;
+  color: #fff !important;
+}
+html.a11y-high-contrast * {
+  border-color: #fff !important;
+}
+html.a11y-high-contrast a,
+html.a11y-high-contrast button {
+  color: #ff0 !important;
+}
+html.a11y-high-contrast footer,
+html.a11y-high-contrast header,
+html.a11y-high-contrast section,
+html.a11y-high-contrast div {
+  background-color: inherit;
+}
+
+html.a11y-grayscale body {
+  filter: grayscale(100%);
+}
+
+html.a11y-highlight-links a {
+  outline: 2px solid #ff0 !important;
+  outline-offset: 2px;
+  text-decoration: underline !important;
+}
+
+html.a11y-readable-font body,
+html.a11y-readable-font * {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+html.a11y-stop-animations *,
+html.a11y-stop-animations *::before,
+html.a11y-stop-animations *::after {
+  animation-duration: 0s !important;
+  animation-delay: 0s !important;
+  transition-duration: 0s !important;
+  transition-delay: 0s !important;
+}
+
+html.a11y-big-cursor,
+html.a11y-big-cursor * {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Cpath d='M5 2l20 14-9 2-5 10-3-12z' fill='black' stroke='white' stroke-width='1.5'/%3E%3C/svg%3E") 5 2, auto !important;
+}
