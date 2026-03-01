@@ -107,6 +107,10 @@
     "member2": {
       "name": "אמיר חן",
       "role": "עו\"ד"
+    },
+    "member3": {
+      "name": "יאיר",
+      "role": "עו\"ד"
     }
   },
   "whatsappForm": {
