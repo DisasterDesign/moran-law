@@ -35,7 +35,7 @@ export default function TeamSection() {
               href={member.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="relative block h-[60vh] overflow-hidden group"
+              className="relative block aspect-[3/4] overflow-hidden group"
             >
               <Image
                 src={member.image}
