@@ -35,13 +35,6 @@ export default function HomeHero({ introDone = true }: { introDone?: boolean }) 
           "radial-gradient(ellipse at 30% 20%, #004466 0%, #003149 40%, #001e2d 100%)",
       }}
     >
-      {/* Moran portrait background */}
-      <img
-        src="/images/moran-portrait-full.jpg"
-        alt=""
-        className="absolute inset-0 w-full h-full object-cover object-top opacity-15 pointer-events-none"
-      />
-
       {/* Canvas animation */}
       <HeroCanvas paused={!introDone} />
 
