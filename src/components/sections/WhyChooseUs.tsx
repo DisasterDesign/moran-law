@@ -41,7 +41,6 @@ export default function WhyChooseUs() {
   const stats = [
     { number: 15, suffix: "+", label: t("stats.years.label") },
     { number: 1000, suffix: "+", label: t("stats.cases.label") },
-    { number: 2, suffix: "", label: t("stats.sides.label") },
   ];
 
   const reasons = [0, 1, 2, 3, 4].map((i) => t(`reasons.${i}`));
@@ -67,6 +66,21 @@ export default function WhyChooseUs() {
               </div>
             </AnimatedSection>
           ))}
+
+          {/* Opposing arrows tile */}
+          <AnimatedSection delay={0.2}>
+            <div className="bg-navy-dark aspect-[4/3] p-6 md:p-8 flex flex-col justify-center items-center text-center tile-hover-effect">
+              <div className="flex flex-col items-center gap-1 mb-3">
+                <svg width="40" height="20" viewBox="0 0 40 20" className="text-white animate-slide-right">
+                  <path d="M0 10 L30 10 L24 4" stroke="currentColor" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+                <svg width="40" height="20" viewBox="0 0 40 20" className="text-white/70 animate-slide-left">
+                  <path d="M40 10 L10 10 L16 4" stroke="currentColor" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </div>
+              <p className="text-white/80 text-sm font-light whitespace-pre-line leading-relaxed">{t("stats.sides.label")}</p>
+            </div>
+          </AnimatedSection>
 
           {/* Circle tile */}
           <AnimatedSection delay={0.3}>

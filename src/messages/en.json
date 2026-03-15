@@ -87,7 +87,7 @@
     "stats": {
       "years": { "suffix": "+", "label": "Years of Experience" },
       "cases": { "suffix": "+", "label": "Cases" },
-      "sides": { "suffix": "", "label": "Sides Employees & Employers" }
+      "sides": { "suffix": "", "label": "Representation on Both Sides\nEmployees & Employers" }
     },
     "circleTile": "Experience That\nMakes the Difference",
     "reasons": {
@@ -105,8 +105,8 @@
       "role": "Attorney & Mediator"
     },
     "member2": {
-      "name": "Yair Hen",
-      "role": "Chief Operating Officer"
+      "name": "Amir Hen",
+      "role": "Office Management & Mediation"
     }
   },
   "whatsappForm": {

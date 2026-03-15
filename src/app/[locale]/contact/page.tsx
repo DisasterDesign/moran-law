@@ -43,6 +43,7 @@ export default async function ContactPage({
           ctaHref: `https://wa.me/${WHATSAPP_NUMBER}`,
         }}
         themeColor="navy-dark"
+        backgroundImage="/images/moran-portrait-full.jpg"
         pageLabel={t("pageLabel")}
       />
 

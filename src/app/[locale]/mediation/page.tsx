@@ -52,7 +52,7 @@ export default async function MediationPage({
           },
         }}
         themeColor="orange-bold"
-        backgroundImage="/images/mediation-meeting.jpg"
+        backgroundImage="/images/moran-portrait-full.jpg"
         pageLabel={t("pageLabel")}
       />
 
@@ -94,6 +94,8 @@ export default async function MediationPage({
         variant="checkmarks"
         themeColor="#2563EB"
       />
+
+      <ImageBanner src="/images/mediation-meeting.jpg" alt="" />
 
       <ImageBanner src="/images/pexels-handshake.jpg" alt="" />
 

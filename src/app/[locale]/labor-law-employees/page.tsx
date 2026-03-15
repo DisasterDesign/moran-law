@@ -53,7 +53,7 @@ export default async function LaborLawEmployeesPage({
           },
         }}
         themeColor="orange-bold"
-        backgroundImage="/images/employees-conflict.jpg"
+        backgroundImage="/images/moran-portrait-full.jpg"
         pageLabel={t("pageLabel")}
       />
 
@@ -85,7 +85,7 @@ export default async function LaborLawEmployeesPage({
         themeColor="#2563EB"
       />
 
-      <ImageBanner src="/images/employees-pregnant.jpg" alt="" />
+      <ImageBanner src="/images/employees-pregnant.jpg" alt="" objectPosition="center 30%" />
 
       {/* Key message */}
       <ContentSection>
@@ -105,8 +105,6 @@ export default async function LaborLawEmployeesPage({
         variant="checkmarks"
         themeColor="#2563EB"
       />
-
-      <ImageBanner src="/images/employees-workers.jpg" alt="" />
 
       {/* Personal section */}
       <ContentSection className="bg-white">
