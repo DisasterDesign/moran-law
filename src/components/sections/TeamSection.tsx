@@ -12,13 +12,8 @@ const teamMembers = [
   },
   {
     key: "member2",
-    image: "/images/moran-bw-new.jpg",
-    linkedin: "https://www.linkedin.com/in/placeholder2",
-  },
-  {
-    key: "member3",
     image: "/images/yair-portrait.png",
-    linkedin: "https://www.linkedin.com/in/placeholder3",
+    linkedin: "https://www.linkedin.com/in/placeholder2",
   },
 ];
 
@@ -33,7 +28,7 @@ export default function TeamSection() {
         </AnimatedSection>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3">
+      <div className="grid grid-cols-1 md:grid-cols-2">
         {teamMembers.map((member, index) => (
           <AnimatedSection key={member.key} delay={index * 0.1}>
             <a
